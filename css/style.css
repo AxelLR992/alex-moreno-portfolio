@@ -1473,7 +1473,6 @@ body {
   pointer-events: none;
 }
 .qrt-slider-navigation .qrt-slider-nav-btn.qrt-main-prev.swiper-button-disabled:after {
-  content: "first";
   margin-right: 10px;
   opacity: 0.3;
   transition: 0.4s ease-in-out;
@@ -1493,7 +1492,6 @@ body {
   pointer-events: none;
 }
 .qrt-slider-navigation .qrt-slider-nav-btn.qrt-main-next.swiper-button-disabled:before {
-  content: "last";
   margin-left: 10px;
   opacity: 0.3;
   transition: 0.4s ease-in-out;

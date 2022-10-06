@@ -416,7 +416,7 @@
         pointer-events: none;
 
         &:after {
-          content: 'first';
+          // content: 'first';
           margin-right: 10px;
           opacity: 0.3;
           transition: $tr-md;
@@ -443,7 +443,7 @@
         pointer-events: none;
 
         &:before {
-          content: 'last';
+          // content: 'last';
           margin-left: 10px;
           opacity: 0.3;
           transition: $tr-md;
