@@ -14,20 +14,10 @@ const initI18n = async () => {
   const es = await getTranslation("es");
 
   $(function () {
-    // i18next.use(i18nextBrowserLanguageDetector).init(
-    //   {
-    //     debug: true,
-    //     fallbackLng: "en",
-    //     resources: {
-    //       en,
-    //       es,
-    //     },
-    //   },
-
-    i18next.init(
+    i18next.use(i18nextBrowserLanguageDetector).init(
       {
         debug: true,
-        fallbackLng: "es",
+        fallbackLng: "en",
         resources: {
           en,
           es,
