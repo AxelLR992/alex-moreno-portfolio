@@ -212,7 +212,7 @@ h5 {
 blockquote {
   color: rgb(40, 41, 44);
   font-size: 1rem;
-  background: rgb(255, 213, 79);
+  background: rgb(41, 182, 246);
   padding: 30px 30px 30px 35px;
   font-weight: 600;
   font-style: italic;
@@ -258,7 +258,7 @@ blockquote:after {
 }
 
 .qrt-divider-2 {
-  background: rgb(255, 213, 79);
+  background: rgb(41, 182, 246);
   width: 90px;
   margin: 0 0 20px;
   height: 2px;
@@ -314,7 +314,7 @@ blockquote:after {
   color: inherit;
 }
 .qrt-btn.qrt-btn-color {
-  background-color: rgb(255, 213, 79);
+  background-color: rgb(41, 182, 246);
   color: rgb(40, 41, 44);
 }
 .qrt-btn.qrt-btn-color:hover {
@@ -359,10 +359,10 @@ blockquote:after {
   transform: translateX(5px);
 }
 .qrt-link.qrt-color-link {
-  color: rgb(255, 213, 79);
+  color: rgb(41, 182, 246);
 }
 .qrt-link.qrt-color-link:hover {
-  color: rgb(255, 213, 79);
+  color: rgb(41, 182, 246);
   transform: translateX(5px);
 }
 .qrt-link.qrt-w-chevron {
@@ -510,7 +510,7 @@ body {
   stroke: rgba(255, 255, 255, 0.1);
 }
 .qrt-app .qrt-preloader .qrt-preloader-content .qrt-preloader-load svg path:last-child {
-  stroke: rgb(255, 213, 79);
+  stroke: rgb(41, 182, 246);
 }
 .qrt-app .qrt-preloader .qrt-preloader-content .qrt-logo {
   width: 80px;
@@ -554,7 +554,7 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 5px 0 0 0;
-  background-color: rgb(255, 213, 79);
+  background-color: rgb(41, 182, 246);
   box-shadow: 0 1px 2px 0 rgba(45, 45, 60, 0.1);
   display: flex;
   justify-content: center;
@@ -616,7 +616,7 @@ body {
   position: absolute;
   bottom: 0;
   left: -20%;
-  background-color: rgb(255, 213, 79);
+  background-color: rgb(41, 182, 246);
 }
 .qrt-app .qrt-top-bar .qrt-menu nav ul li.current-menu-item:after {
   content: "";
@@ -634,7 +634,7 @@ body {
   top: 80px;
   left: -25px;
   padding: 0 25px;
-  background-color: rgb(255, 213, 79);
+  background-color: rgb(41, 182, 246);
   min-width: 160px;
   border-radius: 0 0 5px 5px;
   box-shadow: 0 1px 2px 0 rgba(45, 45, 60, 0.1);
@@ -882,7 +882,7 @@ body {
   margin-bottom: 0;
 }
 .qrt-app .qrt-left-bar .qrt-change-language .qrt-leng.qrt-active {
-  background-color: rgb(255, 213, 79);
+  background-color: rgb(41, 182, 246);
   box-shadow: 0 1px 2px 0 rgba(45, 45, 60, 0.1);
   color: rgb(40, 41, 44);
 }
@@ -1052,7 +1052,7 @@ body {
     display: none;
   }
   .qrt-app .qrt-top-bar .qrt-menu nav ul li.current-menu-item a {
-    color: rgb(255, 213, 79);
+    color: rgb(41, 182, 246);
   }
   .qrt-app .qrt-top-bar .qrt-menu nav ul li.current-menu-item ul li a {
     color: rgb(40, 41, 44);
@@ -1194,7 +1194,7 @@ body {
   width: 25px;
   height: 40px;
   border-radius: 15px;
-  border: solid 2px rgb(255, 213, 79);
+  border: solid 2px rgb(41, 182, 246);
 }
 .qrt-scroll-hint span:before {
   content: "Scroll Down";
@@ -1213,7 +1213,7 @@ body {
   content: "";
   width: 3px;
   height: 3px;
-  background-color: rgb(255, 213, 79);
+  background-color: rgb(41, 182, 246);
   border-radius: 50%;
   position: absolute;
   top: 10px;
@@ -1244,7 +1244,7 @@ body {
   width: 25px;
   height: 40px;
   border-radius: 15px;
-  border: solid 2px rgb(255, 213, 79);
+  border: solid 2px rgb(41, 182, 246);
 }
 
 /* ----- half banner (after 1200px) ----- */
@@ -1535,7 +1535,7 @@ body {
 }
 .qrt-slider-pagination .swiper-main-pagination .swiper-pagination-progressbar-fill {
   height: 100%;
-  background-color: rgb(255, 213, 79);
+  background-color: rgb(41, 182, 246);
 }
 
 /* ----- main slider (after 768px) ----- */
@@ -1917,7 +1917,7 @@ content
   padding: 15px 20px;
 }
 .qrt-team-member .qrt-team-member-description .qrt-member-more {
-  background-color: rgb(255, 213, 79);
+  background-color: rgb(41, 182, 246);
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -1954,7 +1954,7 @@ content
   padding: 2px 0 1px;
   width: 200px;
   text-align: center;
-  background: rgb(255, 213, 79);
+  background: rgb(41, 182, 246);
 }
 .qrt-price .qrt-price-body {
   position: relative;
@@ -2008,7 +2008,7 @@ content
   content: "\f00c";
   margin-right: 5px;
   font-size: 9px;
-  color: rgb(255, 213, 79);
+  color: rgb(41, 182, 246);
 }
 .qrt-price .qrt-price-body .qrt-price-list li.qrt-empty-item {
   opacity: 0.3;
@@ -2019,7 +2019,7 @@ content
   content: "\f00d";
   margin-right: 5px;
   font-size: 9px;
-  color: rgb(255, 213, 79);
+  color: rgb(41, 182, 246);
 }
 
 /* ----- timeline ----- */
@@ -2045,7 +2045,7 @@ content
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: solid 3px rgb(255, 213, 79);
+  border: solid 3px rgb(41, 182, 246);
   background: rgb(255, 255, 255);
 }
 .qrt-timeline .qrt-timeline-item:hover .qrt-timeline-mark-light {
@@ -2135,7 +2135,7 @@ content
 }
 .qrt-testimonial .qrt-stars li i {
   font-size: 10px;
-  color: rgb(255, 213, 79);
+  color: rgb(41, 182, 246);
 }
 .qrt-testimonial .qrt-stars li.qrt-empty i {
   color: rgb(255, 255, 255);
@@ -2232,10 +2232,10 @@ content
   border-left: solid 50px rgb(255, 255, 255);
 }
 .qrt-form-field textarea.qrt-active {
-  border-color: rgb(255, 213, 79);
+  border-color: rgb(41, 182, 246);
 }
 .qrt-form-field textarea:focus {
-  border-color: rgb(255, 213, 79);
+  border-color: rgb(41, 182, 246);
 }
 
 .qrt-contact-form .qrt-input:focus {
@@ -2244,7 +2244,7 @@ content
 
 .qrt-contact-form .qrt-input.qrt-active + label,
 .qrt-contact-form .qrt-input:focus + label {
-  background: rgb(255, 213, 79);
+  background: rgb(41, 182, 246);
   color: rgb(40, 41, 44);
 }
 
@@ -2317,7 +2317,7 @@ content
   padding: 2px;
   width: 200px;
   text-align: center;
-  background: rgb(255, 213, 79);
+  background: rgb(41, 182, 246);
 }
 .qrt-post-frame .qrt-post-thumb {
   background-color: rgb(40, 41, 44);
@@ -2455,7 +2455,7 @@ content
 }
 .qrt-post-frame.qrt-lg-post .qrt-post-descr .qrt-work-more {
   margin-left: 40px;
-  background-color: rgb(255, 213, 79);
+  background-color: rgb(41, 182, 246);
   width: 35px;
   min-width: 35px;
   height: 35px;
@@ -2493,10 +2493,10 @@ content
 }
 .qrt-blog-pagination li a.qrt-active {
   color: rgb(40, 41, 44);
-  background: rgb(255, 213, 79);
+  background: rgb(41, 182, 246);
 }
 .qrt-blog-pagination li a.qrt-active:hover {
-  background: rgb(255, 213, 79);
+  background: rgb(41, 182, 246);
 }
 .qrt-blog-pagination li a:hover {
   background: rgb(255, 255, 255);
@@ -2668,7 +2668,7 @@ portfolio
   transition: 0.4s ease-in-out;
 }
 .qrt-work-item .qrt-work-descr .qrt-work-more {
-  background-color: rgb(255, 213, 79);
+  background-color: rgb(41, 182, 246);
   width: 35px;
   min-width: 35px;
   height: 35px;
@@ -2856,7 +2856,7 @@ portfolio
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgb(255, 213, 79);
+  background-color: rgb(41, 182, 246);
   margin-right: 0;
   height: 100%;
   width: 40px;
@@ -3055,7 +3055,7 @@ plugins customization
 }
 
 .fancybox-progress {
-  background: rgb(255, 213, 79);
+  background: rgb(41, 182, 246);
   z-index: 1000000000000000000;
 }
 
@@ -3064,7 +3064,7 @@ plugins customization
 }
 
 .fancybox-thumbs__list a:before {
-  border-color: rgb(255, 213, 79);
+  border-color: rgb(41, 182, 246);
   transition: 0.4s ease-in-out;
 }
 
@@ -3133,7 +3133,7 @@ plugins customization
 }
 .qrt-map-frame .qrt-lock.qrt-active {
   opacity: 1;
-  background-color: rgb(255, 213, 79);
+  background-color: rgb(41, 182, 246);
 }
 .qrt-map-frame .qrt-lock i {
   font-size: 12px;
@@ -3191,7 +3191,7 @@ plugins customization
   animation: marker 1s infinite ease-in-out;
 }
 .mapboxgl-marker svg g {
-  fill: rgb(255, 213, 79);
+  fill: rgb(41, 182, 246);
 }
 .mapboxgl-marker svg circle {
   fill: #28292c;
