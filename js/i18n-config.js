@@ -61,3 +61,7 @@ const initI18n = async () => {
 };
 
 initI18n();
+
+document.addEventListener("swup:contentReplaced", function () {
+  rerender();
+});
