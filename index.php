@@ -736,9 +736,7 @@
               <div class="col-lg-12">
                 <div class="swiper-container qrt-brands-slider" style="overflow: visible">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="img/brands/b1.svg" alt="brand" />
-                    </div>
+                    <?php include "includes/clients-slider.php"; ?>
                   </div>
                 </div>
               </div>
