@@ -1,11 +1,4 @@
 <?php
-require("./classes/Fetch.php");
-require("./vendor/autoload.php");
-
-// Load .env
-$dotenv = Dotenv\Dotenv::createImmutable("./");
-$dotenv->load();
-
 // Call the API to obtain the clients
 
 $fetch = new Fetch();
@@ -18,7 +11,7 @@ $clients = json_decode($fetch->get("/content/items/clients"));
 foreach ($clients as $client) { ?>
     <div class="swiper-slide">
         <img 
-            src="<?php echo "https://cms.alexmorenoac.com/storage/uploads" . $client->logo->path ?>" 
+            src="<?php echo $_ENV["ASSETS_URL"] . $client->logo->path ?>" 
             alt="<?php echo $client->name ?>" 
         />
     </div>

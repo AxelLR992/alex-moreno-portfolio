@@ -8,7 +8,7 @@
             <nav>
                 <ul>
                     <li class="current-menu-item">
-                        <a class="qrt-mobile-fix" href="/" data-i18n="nav.home"></a>
+                        <a class="qrt-mobile-fix" href="/"><?php echo L::nav_home; ?></a>
                     </li>
                     <li>
                         <a class="qrt-mobile-fix" href="about-me.php">About</a>

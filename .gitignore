@@ -1,2 +1,4 @@
 /vendor/
 .env
+js/environment.js
+/langcache/

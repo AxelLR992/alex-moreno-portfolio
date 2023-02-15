@@ -139,7 +139,7 @@ h5 {
 }
 /* ----- quote ----- */
 blockquote {
-  color: $black-lvl-1;
+  color: rgba(29, 233, 182, 1);
   font-size: 1rem;
   background: $accent;
   padding: 30px 30px 30px 35px;
@@ -154,7 +154,7 @@ blockquote {
     content: "\f10d";
     font-size: 16px;
     opacity: 0.5;
-    color: #fff;
+    color: rgba(29, 233, 182, 1);
     top: 13px;
     left: 13px;
   }
@@ -253,15 +253,15 @@ blockquote {
 
   &.qrt-btn-color {
     background-color: $accent;
-    color: $black-lvl-1;
+    color: $white-lvl-1;
 
     &:hover {
-      color: $black-lvl-1;
+      color: $white-lvl-1;
     }
 
     &:focus {
       outline: inherit;
-      color: $black-lvl-1;
+      color: $white-lvl-1;
     }
   }
 

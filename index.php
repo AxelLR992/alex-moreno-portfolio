@@ -1,3 +1,4 @@
+<?php include "includes/init.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,16 +28,7 @@
 
 <body>
   <div class="qrt-app">
-    <!-- Preloader -->
-    <div class="qrt-preloader">
-      <div class="qrt-preloader-content">
-        <div class="qrt-logo">
-          <img src="img/logo.svg" alt="Quarty" />
-        </div>
-        <div id="preloader" class="qrt-preloader-load"></div>
-      </div>
-    </div>
-    <!-- End preloader -->
+    <?php include "includes/preloader.php"; ?>
     <div id="cursor" class="qrt-cursor">
       <div></div>
       <div class="qrt-follower"><i class="fas fa-circle-notch"></i></div>
@@ -46,94 +38,8 @@
     <div class="qrt-curtain"></div>
     <div id="qrt-dynamic-content" class="qrt-dynamic-content">
       <div class="qrt-content" id="qrt-scroll-content">
-        <div class="swiper-container qrt-main-slider-onepage">
-          <div class="qrt-slider-pagination">
-            <div class="swiper-pagination swiper-main-pagination"></div>
-          </div>
-          <div class="qrt-slider-navigation qrt-absolute">
-            <div class="qrt-slider-nav-btn qrt-main-prev qrt-cursor-scale qrt-cursor-color">
-              <i class="fas fa-arrow-left"></i><span data-i18n="sliderControls.previous"></span>
-            </div>
-            <div class="qrt-slider-nav-btn qrt-main-next qrt-cursor-scale qrt-cursor-color">
-              <span data-i18n="sliderControls.next"></span><i class="fas fa-arrow-right"></i>
-            </div>
-          </div>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="qrt-project-cover">
-                <div class="qrt-image-frame">
-                  <img class="" src="img/projects/original-size/1.jpg" alt="project cover" data-swiper-parallax="400" data-swiper-parallax-scale="1.4" />
-                </div>
-                <div class="qrt-overlay">
-                  <div class="qrt-parallax-fix" data-swiper-parallax-x="-400" data-swiper-parallax-duration="1000">
-                    <div class="qrt-banner-title">
-                      <h1 class="qrt-white qrt-mb-30">
-                        Architecture - <br />
-                        petrified music
-                      </h1>
-                      <div class="qrt-divider-2"></div>
-                      <div class="qrt-text qrt-white qrt-mb-20">
-                        Change is an opportunity! We want to lead people
-                        towards durable solutions and designs that enhance
-                        feelings of closeness, and hopefully, happiness.
-                      </div>
-                      <a href="about-us.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-cursor-scale qrt-anima-link qrt-mb-20"><span>Explore now</span><i class="fas fa-arrow-right"></i></a>
-                      <a href="contact.html" class="qrt-btn qrt-btn-md qrt-btn-border qrt-cursor-scale qrt-anima-link qrt-mb-20"><span>Contact</span><i class="fas fa-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="qrt-project-cover">
-                <div class="qrt-image-frame">
-                  <img class="" src="img/projects/original-size/3.jpg" alt="project cover" data-swiper-parallax="400" data-swiper-parallax-scale="1.4" />
-                </div>
-                <div class="qrt-overlay">
-                  <div class="qrt-parallax-fix" data-swiper-parallax-x="-400" data-swiper-parallax-duration="1000">
-                    <div class="qrt-banner-title">
-                      <h1 class="qrt-white qrt-mb-30">
-                        Architecture is <br />about creating order
-                      </h1>
-                      <div class="qrt-divider-2"></div>
-                      <div class="qrt-text qrt-white qrt-mb-20">
-                        Change is an opportunity! We want to lead people
-                        towards durable solutions and designs that enhance
-                        feelings of closeness, and hopefully, happiness.
-                      </div>
-                      <a href="about-us.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-cursor-scale qrt-anima-link qrt-mb-20"><span>Explore now</span><i class="fas fa-arrow-right"></i></a>
-                      <a href="contact.html" class="qrt-btn qrt-btn-md qrt-btn-border qrt-cursor-scale qrt-anima-link qrt-mb-20"><span>Contact</span><i class="fas fa-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="qrt-project-cover">
-                <div class="qrt-image-frame">
-                  <img class="" src="img/projects/original-size/2.jpg" alt="project cover" data-swiper-parallax="400" data-swiper-parallax-scale="1.4" />
-                </div>
-                <div class="qrt-overlay">
-                  <div class="qrt-parallax-fix" data-swiper-parallax-x="-400" data-swiper-parallax-duration="1000">
-                    <div class="qrt-banner-title">
-                      <h1 class="qrt-white qrt-mb-30">
-                        Our knowledge <br />is your property
-                      </h1>
-                      <div class="qrt-divider-2"></div>
-                      <div class="qrt-text qrt-white qrt-mb-20">
-                        Change is an opportunity! We want to lead people
-                        towards durable solutions and designs that enhance
-                        feelings of closeness, and hopefully, happiness.
-                      </div>
-                      <a href="about-us.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-cursor-scale qrt-anima-link qrt-mb-20"><span>Explore now</span><i class="fas fa-arrow-right"></i></a>
-                      <a href="contact.html" class="qrt-btn qrt-btn-md qrt-btn-border qrt-cursor-scale qrt-anima-link qrt-mb-20"><span>Contact</span><i class="fas fa-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      
+        <?php include "includes/homepage-banners.php"; ?>
 
         <div class="qrt-content-frame">
           <div class="qrt-left">
@@ -206,70 +112,6 @@
                     <span class="qrt-counter">20</span>
                   </div>
                   <h5>Honors and Awards</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="qrt-divider qrt-space-fix"></div>
-
-            <div class="row">
-              <div class="col-lg-12">
-                <h3 class="qrt-mb-40">Our team</h3>
-              </div>
-              <div class="col-lg-3">
-                <div class="qrt-team-member">
-                  <a href="about-me.html" class="qrt-cursor-scale qrt-team-item qrt-anima-link">
-                    <img src="img/team/tm1.jpg" alt="team member" />
-                  </a>
-                  <div class="qrt-team-member-description">
-                    <div class="qrt-member-name">
-                      <h4 class="qrt-white qrt-qrt-mb-5">Viktoria Freeman</h4>
-                      <span>Chief Architect</span>
-                    </div>
-                    <a href="about-me.html" class="qrt-cursor-scale qrt-member-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="qrt-team-member">
-                  <a href="about-me.html" class="qrt-cursor-scale qrt-team-item qrt-anima-link">
-                    <img src="img/team/tm2.jpg" alt="team member" />
-                  </a>
-                  <div class="qrt-team-member-description">
-                    <div class="qrt-member-name">
-                      <h4 class="qrt-white qrt-qrt-mb-5">Paul trueman</h4>
-                      <span>Chief Architect</span>
-                    </div>
-                    <a href="about-me.html" class="qrt-cursor-scale qrt-member-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="qrt-team-member">
-                  <a href="about-me.html" class="qrt-cursor-scale qrt-team-item qrt-anima-link">
-                    <img src="img/team/tm3.jpg" alt="team member" />
-                  </a>
-                  <div class="qrt-team-member-description">
-                    <div class="qrt-member-name">
-                      <h4 class="qrt-white qrt-qrt-mb-5">Emma Newman</h4>
-                      <span>Chief Architect</span>
-                    </div>
-                    <a href="about-me.html" class="qrt-cursor-scale qrt-member-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="qrt-team-member">
-                  <a href="about-me.html" class="qrt-cursor-scale qrt-team-item qrt-anima-link">
-                    <img src="img/team/tm4.jpg" alt="team member" />
-                  </a>
-                  <div class="qrt-team-member-description">
-                    <div class="qrt-member-name">
-                      <h4 class="qrt-white qrt-qrt-mb-5">Anna Oldman</h4>
-                      <span>Chief Architect</span>
-                    </div>
-                    <a href="about-me.html" class="qrt-cursor-scale qrt-member-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -365,118 +207,14 @@
 
             <div class="qrt-divider qrt-space-fix"></div>
 
-            <div class="row">
-              <div class="col-lg-12">
-                <h3 class="qrt-mb-40">Testimonials</h3>
-              </div>
-              <div class="col-lg-12">
-                <div class="swiper-container qrt-testimonials-slider" style="overflow: visible">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="qrt-testimonial">
-                        <div class="qrt-testimonial-header">
-                          <img src="img/testimonials/t1.jpg" alt="customer" />
-                          <div class="qrt-testimonial-name">
-                            <h4 class="qrt-mb-5">Paul Trueman</h4>
-                            <div class="qrt-el-suptitle">Chief Architect</div>
-                          </div>
-                        </div>
-                        <div class="qrt-testimonial-text">
-                          We worked with Quarty Studio for approximately 2
-                          years on the complete overhaul of our house. This
-                          included the design of the project, and the
-                          execution of the work. Quarty provided excellent
-                          design ideas but were also indispensable in managing
-                          the practical side of the build.
-                        </div>
-                        <ul class="qrt-stars">
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="qrt-testimonial">
-                        <div class="qrt-testimonial-header">
-                          <img src="img/testimonials/t2.jpg" alt="customer" />
-                          <div class="qrt-testimonial-name">
-                            <h4 class="qrt-mb-5">Emma Newman</h4>
-                            <div class="qrt-el-suptitle">Chief Architect</div>
-                          </div>
-                        </div>
-                        <div class="qrt-testimonial-text">
-                          We engaged Paul Trueman of quarty Studio to manage
-                          the planning process and to design and manage a full
-                          renovation and remodelling of our 1930s house. We
-                          really enjoyed working with Paul. We would not
-                          hesitate to recommend Paul and Quarty.
-                        </div>
-                        <ul class="qrt-stars">
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="qrt-testimonial">
-                        <div class="qrt-testimonial-header">
-                          <img src="img/testimonials/t3.jpg" alt="customer" />
-                          <div class="qrt-testimonial-name">
-                            <h4 class="qrt-mb-5">Viktoria freeman</h4>
-                            <div class="qrt-el-suptitle">Chief Architect</div>
-                          </div>
-                        </div>
-                        <div class="qrt-testimonial-text">
-                          We worked with Quarty Studio for approximately 2
-                          years on the complete overhaul of our house. This
-                          included the design of the project, and the
-                          execution of the work. Quarty provided excellent
-                          design ideas but were also indispensable in managing
-                          the practical side of the build.
-                        </div>
-                        <ul class="qrt-stars">
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li class="qrt-empty">
-                            <i class="fas fa-star"></i>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="swiper-testi-pagination qrt-cursor-color qrt-cursor-scale"></div>
-              </div>
-              <div class="col-6">
-                <div class="qrt-slider-nav">
-                  <!-- prev -->
-                  <div class="qrt-slider-prev qrt-testi-prev qrt-cursor-color qrt-cursor-scale">
-                    <i class="fas fa-arrow-left"></i>
-                  </div>
-                  <!-- next -->
-                  <div class="qrt-slider-next qrt-testi-next qrt-cursor-color qrt-cursor-scale">
-                    <i class="fas fa-arrow-right"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            <?php include "includes/testimonials-slider.php"; ?>
+            
             <div class="qrt-divider"></div>
 
             <div class="row">
               <div class="col-lg-12">
                 <div class="swiper-container qrt-brands-slider" style="overflow: visible">
-                  <div class="swiper-wrapper">
+                  <div class="swiper-wrapper clients-slider">
                     <?php include "includes/clients-slider.php"; ?>
                   </div>
                 </div>
@@ -522,11 +260,15 @@
   <script src="js/main.js"></script>
 
   <!-- CUSTOM -->
+  <script src="js/environment.js"></script>
   <!-- i18n -->
-  <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
-  <script src="js/i18n-config.js"></script>
+  <script src="js/i18n-config.js"></script> -->
+
+  <!-- Fetch data from CMS -->
+  <script src="js/custom.js"></script>
 </body>
 
 </html>

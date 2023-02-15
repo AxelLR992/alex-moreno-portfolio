@@ -56,7 +56,6 @@ body {
 
         & img {
           width: 100%;
-          filter: invert(100%) brightness(150%);
         }
       }
 
@@ -100,8 +99,8 @@ body {
       align-items: center;
 
       & img {
-        width: 22px;
-        height: 22px;
+        width: 85px;
+        height: 85px;
         object-fit: cover;
         object-position: center;
         transition: $tr-md;
@@ -113,8 +112,7 @@ body {
       width: 80px;
 
       & img {
-        width: 100%;
-        filter: invert(100%) brightness(150%);
+        width: 120px;
       }
     }
     /* ----- menu ----- */
@@ -507,7 +505,7 @@ body {
         &.qrt-active {
           background-color: $accent;
           box-shadow: $shadow;
-          color: $black-lvl-1;
+          color: $white-lvl-1;
         }
       }
     }

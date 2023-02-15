@@ -210,9 +210,9 @@ h5 {
 
 /* ----- quote ----- */
 blockquote {
-  color: rgb(40, 41, 44);
+  color: rgb(29, 233, 182);
   font-size: 1rem;
-  background: rgb(41, 182, 246);
+  background: rgb(70, 77, 210);
   padding: 30px 30px 30px 35px;
   font-weight: 600;
   font-style: italic;
@@ -225,7 +225,7 @@ blockquote:before {
   content: "\f10d";
   font-size: 16px;
   opacity: 0.5;
-  color: #fff;
+  color: rgb(29, 233, 182);
   top: 13px;
   left: 13px;
 }
@@ -258,7 +258,7 @@ blockquote:after {
 }
 
 .qrt-divider-2 {
-  background: rgb(41, 182, 246);
+  background: rgb(70, 77, 210);
   width: 90px;
   margin: 0 0 20px;
   height: 2px;
@@ -314,15 +314,15 @@ blockquote:after {
   color: inherit;
 }
 .qrt-btn.qrt-btn-color {
-  background-color: rgb(41, 182, 246);
-  color: rgb(40, 41, 44);
+  background-color: rgb(70, 77, 210);
+  color: rgb(255, 255, 255);
 }
 .qrt-btn.qrt-btn-color:hover {
-  color: rgb(40, 41, 44);
+  color: rgb(255, 255, 255);
 }
 .qrt-btn.qrt-btn-color:focus {
   outline: inherit;
-  color: rgb(40, 41, 44);
+  color: rgb(255, 255, 255);
 }
 .qrt-btn.qrt-btn-border {
   background-color: transparent;
@@ -359,10 +359,10 @@ blockquote:after {
   transform: translateX(5px);
 }
 .qrt-link.qrt-color-link {
-  color: rgb(41, 182, 246);
+  color: rgb(70, 77, 210);
 }
 .qrt-link.qrt-color-link:hover {
-  color: rgb(41, 182, 246);
+  color: rgb(70, 77, 210);
   transform: translateX(5px);
 }
 .qrt-link.qrt-w-chevron {
@@ -510,7 +510,7 @@ body {
   stroke: rgba(255, 255, 255, 0.1);
 }
 .qrt-app .qrt-preloader .qrt-preloader-content .qrt-preloader-load svg path:last-child {
-  stroke: rgb(41, 182, 246);
+  stroke: rgb(70, 77, 210);
 }
 .qrt-app .qrt-preloader .qrt-preloader-content .qrt-logo {
   width: 80px;
@@ -518,7 +518,6 @@ body {
 }
 .qrt-app .qrt-preloader .qrt-preloader-content .qrt-logo img {
   width: 100%;
-  filter: invert(100%) brightness(150%);
 }
 .qrt-app .qrt-preloader .qrt-preloader-content .progressbar-text {
   top: 30px !important;
@@ -554,15 +553,15 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 5px 0 0 0;
-  background-color: rgb(41, 182, 246);
+  background-color: rgb(70, 77, 210);
   box-shadow: 0 1px 2px 0 rgba(45, 45, 60, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .qrt-app .qrt-top-bar .qrt-symbol img {
-  width: 22px;
-  height: 22px;
+  width: 85px;
+  height: 85px;
   object-fit: cover;
   object-position: center;
   transition: 0.4s ease-in-out;
@@ -572,8 +571,7 @@ body {
   width: 80px;
 }
 .qrt-app .qrt-top-bar .qrt-logo img {
-  width: 100%;
-  filter: invert(100%) brightness(150%);
+  width: 120px;
 }
 .qrt-app .qrt-top-bar .qrt-menu {
   height: 80px;
@@ -616,7 +614,7 @@ body {
   position: absolute;
   bottom: 0;
   left: -20%;
-  background-color: rgb(41, 182, 246);
+  background-color: rgb(70, 77, 210);
 }
 .qrt-app .qrt-top-bar .qrt-menu nav ul li.current-menu-item:after {
   content: "";
@@ -634,7 +632,7 @@ body {
   top: 80px;
   left: -25px;
   padding: 0 25px;
-  background-color: rgb(41, 182, 246);
+  background-color: rgb(70, 77, 210);
   min-width: 160px;
   border-radius: 0 0 5px 5px;
   box-shadow: 0 1px 2px 0 rgba(45, 45, 60, 0.1);
@@ -882,9 +880,9 @@ body {
   margin-bottom: 0;
 }
 .qrt-app .qrt-left-bar .qrt-change-language .qrt-leng.qrt-active {
-  background-color: rgb(41, 182, 246);
+  background-color: rgb(70, 77, 210);
   box-shadow: 0 1px 2px 0 rgba(45, 45, 60, 0.1);
-  color: rgb(40, 41, 44);
+  color: rgb(255, 255, 255);
 }
 .qrt-app .qrt-curtain {
   cursor: pointer;
@@ -1052,7 +1050,7 @@ body {
     display: none;
   }
   .qrt-app .qrt-top-bar .qrt-menu nav ul li.current-menu-item a {
-    color: rgb(41, 182, 246);
+    color: rgb(70, 77, 210);
   }
   .qrt-app .qrt-top-bar .qrt-menu nav ul li.current-menu-item ul li a {
     color: rgb(40, 41, 44);
@@ -1194,7 +1192,7 @@ body {
   width: 25px;
   height: 40px;
   border-radius: 15px;
-  border: solid 2px rgb(41, 182, 246);
+  border: solid 2px rgb(70, 77, 210);
 }
 .qrt-scroll-hint span:before {
   content: "Scroll Down";
@@ -1213,7 +1211,7 @@ body {
   content: "";
   width: 3px;
   height: 3px;
-  background-color: rgb(41, 182, 246);
+  background-color: rgb(70, 77, 210);
   border-radius: 50%;
   position: absolute;
   top: 10px;
@@ -1244,7 +1242,7 @@ body {
   width: 25px;
   height: 40px;
   border-radius: 15px;
-  border: solid 2px rgb(41, 182, 246);
+  border: solid 2px rgb(70, 77, 210);
 }
 
 /* ----- half banner (after 1200px) ----- */
@@ -1533,35 +1531,35 @@ body {
 }
 .qrt-slider-pagination .swiper-main-pagination .swiper-pagination-progressbar-fill {
   height: 100%;
-  background-color: rgb(41, 182, 246);
+  background-color: rgb(70, 77, 210);
 }
 
 /* ----- main slider (after 768px) ----- */
 @media (max-width: 768px) {
   .qrt-main-slider,
-.qrt-main-slider-onepage {
+  .qrt-main-slider-onepage {
     height: calc(100vh - 80px);
   }
   .qrt-main-slider .qrt-project-cover,
-.qrt-main-slider-onepage .qrt-project-cover {
+  .qrt-main-slider-onepage .qrt-project-cover {
     width: 100vw;
   }
   .qrt-main-slider .qrt-project-cover .qrt-overlay,
-.qrt-main-slider-onepage .qrt-project-cover .qrt-overlay {
+  .qrt-main-slider-onepage .qrt-project-cover .qrt-overlay {
     padding: 20px;
   }
   .qrt-main-slider .qrt-project-cover .qrt-overlay .qrt-banner-title,
-.qrt-main-slider-onepage .qrt-project-cover .qrt-overlay .qrt-banner-title {
+  .qrt-main-slider-onepage .qrt-project-cover .qrt-overlay .qrt-banner-title {
     margin-bottom: 70px;
     width: 100%;
     text-align: center;
   }
   .qrt-main-slider .qrt-project-cover .qrt-overlay .qrt-banner-title .qrt-divider-2,
-.qrt-main-slider-onepage .qrt-project-cover .qrt-overlay .qrt-banner-title .qrt-divider-2 {
+  .qrt-main-slider-onepage .qrt-project-cover .qrt-overlay .qrt-banner-title .qrt-divider-2 {
     margin: 0 auto 20px;
   }
   .qrt-main-slider .qrt-project-cover .qrt-overlay .qrt-banner-title .qrt-text,
-.qrt-main-slider-onepage .qrt-project-cover .qrt-overlay .qrt-banner-title .qrt-text {
+  .qrt-main-slider-onepage .qrt-project-cover .qrt-overlay .qrt-banner-title .qrt-text {
     margin: 0 auto;
     display: block;
   }
@@ -1915,7 +1913,7 @@ content
   padding: 15px 20px;
 }
 .qrt-team-member .qrt-team-member-description .qrt-member-more {
-  background-color: rgb(41, 182, 246);
+  background-color: rgb(70, 77, 210);
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -1946,13 +1944,13 @@ content
   z-index: 99;
   top: 15px;
   font-weight: 600;
-  color: rgb(40, 41, 44);
+  color: rgb(255, 255, 255);
   right: -78px;
   content: "POPULAR";
   padding: 2px 0 1px;
   width: 200px;
   text-align: center;
-  background: rgb(41, 182, 246);
+  background: rgb(70, 77, 210);
 }
 .qrt-price .qrt-price-body {
   position: relative;
@@ -2006,7 +2004,7 @@ content
   content: "\f00c";
   margin-right: 5px;
   font-size: 9px;
-  color: rgb(41, 182, 246);
+  color: rgb(70, 77, 210);
 }
 .qrt-price .qrt-price-body .qrt-price-list li.qrt-empty-item {
   opacity: 0.3;
@@ -2017,7 +2015,7 @@ content
   content: "\f00d";
   margin-right: 5px;
   font-size: 9px;
-  color: rgb(41, 182, 246);
+  color: rgb(70, 77, 210);
 }
 
 /* ----- timeline ----- */
@@ -2043,7 +2041,7 @@ content
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: solid 3px rgb(41, 182, 246);
+  border: solid 3px rgb(70, 77, 210);
   background: rgb(255, 255, 255);
 }
 .qrt-timeline .qrt-timeline-item:hover .qrt-timeline-mark-light {
@@ -2133,7 +2131,7 @@ content
 }
 .qrt-testimonial .qrt-stars li i {
   font-size: 10px;
-  color: rgb(41, 182, 246);
+  color: rgb(70, 77, 210);
 }
 .qrt-testimonial .qrt-stars li.qrt-empty i {
   color: rgb(255, 255, 255);
@@ -2230,10 +2228,10 @@ content
   border-left: solid 50px rgb(255, 255, 255);
 }
 .qrt-form-field textarea.qrt-active {
-  border-color: rgb(41, 182, 246);
+  border-color: rgb(70, 77, 210);
 }
 .qrt-form-field textarea:focus {
-  border-color: rgb(41, 182, 246);
+  border-color: rgb(70, 77, 210);
 }
 
 .qrt-contact-form .qrt-input:focus {
@@ -2242,7 +2240,7 @@ content
 
 .qrt-contact-form .qrt-input.qrt-active + label,
 .qrt-contact-form .qrt-input:focus + label {
-  background: rgb(41, 182, 246);
+  background: rgb(70, 77, 210);
   color: rgb(40, 41, 44);
 }
 
@@ -2315,7 +2313,7 @@ content
   padding: 2px;
   width: 200px;
   text-align: center;
-  background: rgb(41, 182, 246);
+  background: rgb(70, 77, 210);
 }
 .qrt-post-frame .qrt-post-thumb {
   background-color: rgb(40, 41, 44);
@@ -2453,7 +2451,7 @@ content
 }
 .qrt-post-frame.qrt-lg-post .qrt-post-descr .qrt-work-more {
   margin-left: 40px;
-  background-color: rgb(41, 182, 246);
+  background-color: rgb(70, 77, 210);
   width: 35px;
   min-width: 35px;
   height: 35px;
@@ -2491,10 +2489,10 @@ content
 }
 .qrt-blog-pagination li a.qrt-active {
   color: rgb(40, 41, 44);
-  background: rgb(41, 182, 246);
+  background: rgb(70, 77, 210);
 }
 .qrt-blog-pagination li a.qrt-active:hover {
-  background: rgb(41, 182, 246);
+  background: rgb(70, 77, 210);
 }
 .qrt-blog-pagination li a:hover {
   background: rgb(255, 255, 255);
@@ -2666,7 +2664,7 @@ portfolio
   transition: 0.4s ease-in-out;
 }
 .qrt-work-item .qrt-work-descr .qrt-work-more {
-  background-color: rgb(41, 182, 246);
+  background-color: rgb(70, 77, 210);
   width: 35px;
   min-width: 35px;
   height: 35px;
@@ -2854,7 +2852,7 @@ portfolio
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgb(41, 182, 246);
+  background-color: rgb(70, 77, 210);
   margin-right: 0;
   height: 100%;
   width: 40px;
@@ -2869,7 +2867,7 @@ portfolio
 
 @media (max-width: 992px) {
   .qrt-grid-sizer,
-.qrt-masonry-grid-item {
+  .qrt-masonry-grid-item {
     width: 50%;
   }
   .qrt-masonry-grid-item-33 {
@@ -2893,7 +2891,7 @@ portfolio
 }
 @media (max-width: 500px) {
   .qrt-grid-sizer,
-.qrt-masonry-grid-item {
+  .qrt-masonry-grid-item {
     width: 100%;
   }
   .qrt-masonry-grid-item-33 {
@@ -3053,7 +3051,7 @@ plugins customization
 }
 
 .fancybox-progress {
-  background: rgb(41, 182, 246);
+  background: rgb(70, 77, 210);
   z-index: 1000000000000000000;
 }
 
@@ -3062,7 +3060,7 @@ plugins customization
 }
 
 .fancybox-thumbs__list a:before {
-  border-color: rgb(41, 182, 246);
+  border-color: rgb(70, 77, 210);
   transition: 0.4s ease-in-out;
 }
 
@@ -3131,7 +3129,7 @@ plugins customization
 }
 .qrt-map-frame .qrt-lock.qrt-active {
   opacity: 1;
-  background-color: rgb(41, 182, 246);
+  background-color: rgb(70, 77, 210);
 }
 .qrt-map-frame .qrt-lock i {
   font-size: 12px;
@@ -3189,7 +3187,7 @@ plugins customization
   animation: marker 1s infinite ease-in-out;
 }
 .mapboxgl-marker svg g {
-  fill: rgb(41, 182, 246);
+  fill: rgb(70, 77, 210);
 }
 .mapboxgl-marker svg circle {
   fill: #28292c;
