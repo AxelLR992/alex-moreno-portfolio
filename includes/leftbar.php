@@ -1,7 +1,7 @@
 <?php
 $lng_btn_active_class = "qrt-leng qrt-active locale-change-button";
 $lng_btn_inactive_class = "qrt-leng qrt-cursor-color qrt-cursor-scale locale-change-button";
-$lng = strtolower($_SESSION['lang']);
+$lng = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getFallbackLang();
 ?>
 
 <div class="qrt-left-bar">
