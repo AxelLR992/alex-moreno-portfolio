@@ -38,7 +38,7 @@
     <div class="qrt-curtain"></div>
     <div id="qrt-dynamic-content" class="qrt-dynamic-content">
       <div class="qrt-content" id="qrt-scroll-content">
-      
+
         <?php include "includes/homepage-banners.php"; ?>
 
         <div class="qrt-content-frame">
@@ -118,97 +118,12 @@
 
             <div class="qrt-divider qrt-space-fix"></div>
 
-            <div class="row">
-              <div class="col-lg-12">
-                <h3 class="qrt-mb-40">Prices</h3>
-              </div>
-              <div class="col-lg-3">
-                <div class="qrt-a qrt-price">
-                  <div class="qrt-price-body">
-                    <h5 class="qrt-mb-20">Starter Price</h5>
-                    <div class="qrt-price-cost">
-                      <div class="qrt-number">FREE<sup>*</sup></div>
-                    </div>
-                    <ul class="qrt-price-list">
-                      <li>Ui Design</li>
-                      <li>Web Development</li>
-                      <li class="qrt-empty-item">Logo design</li>
-                      <li class="qrt-empty-item">SEO optimization</li>
-                      <li class="qrt-empty-item">Wordpress integration</li>
-                    </ul>
-                    <a class="qrt-btn qrt-btn-md qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Order now</span><i class="fas fa-arrow-right"></i></a>
-                    <div class="qrt-asterisk">
-                      <sup>*</sup>Free only when ordering paid services
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="qrt-a qrt-price qrt-popular-price">
-                  <div class="qrt-price-body">
-                    <h5 class="qrt-mb-20">Hourly payment</h5>
-                    <div class="qrt-price-cost">
-                      <div class="qrt-number">
-                        <span>$</span>29<span>h</span>
-                      </div>
-                    </div>
-                    <ul class="qrt-price-list">
-                      <li>Ui Design</li>
-                      <li>Web Development</li>
-                      <li>Logo design</li>
-                      <li class="qrt-empty-item">SEO optimization</li>
-                      <li class="qrt-empty-item">Wordpress integration</li>
-                    </ul>
-                    <a class="qrt-btn qrt-btn-md qrt-btn-color qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Order now</span><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="qrt-a qrt-price">
-                  <div class="qrt-price-body">
-                    <h5 class="qrt-mb-20">Part time</h5>
-                    <div class="qrt-price-cost">
-                      <div class="qrt-number">
-                        <span>$</span>1999<span>m</span>
-                      </div>
-                    </div>
-                    <ul class="qrt-price-list">
-                      <li>Ui Design</li>
-                      <li>Web Development</li>
-                      <li>Logo design</li>
-                      <li>SEO optimization</li>
-                      <li class="qrt-empty-item">Wordpress integration</li>
-                    </ul>
-                    <a class="qrt-btn qrt-btn-md qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Order now</span><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="qrt-a qrt-price">
-                  <div class="qrt-price-body">
-                    <h5 class="qrt-mb-20">Full time</h5>
-                    <div class="qrt-price-cost">
-                      <div class="qrt-number">
-                        <span>$</span>2999<span>m</span>
-                      </div>
-                    </div>
-                    <ul class="qrt-price-list">
-                      <li>Ui Design</li>
-                      <li>Web Development</li>
-                      <li>Logo design</li>
-                      <li>SEO optimization</li>
-                      <li>Wordpress integration</li>
-                    </ul>
-                    <a class="qrt-btn qrt-btn-md qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Order now</span><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <?php include "includes/prices.php"; ?>
 
             <div class="qrt-divider qrt-space-fix"></div>
 
             <?php include "includes/testimonials-slider.php"; ?>
-            
+
             <div class="qrt-divider"></div>
 
             <div class="row">
