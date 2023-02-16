@@ -5,6 +5,22 @@
     "previous": "Prev"
   },
   "nav": {
-    "home": "Home"
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "common": {
+    "country": "Country",
+    "city": "City",
+    "street": "Street",
+    "email": "Email",
+    "phone": "Phone",
+    "socialMedia": "Social Media",
+    "sendRequest": "Send Request",
+    "designBy": "Diseño por",
+    "developedBy": "Desarrollado por",
+    "free": "Free"
   }
 }

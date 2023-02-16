@@ -1,11 +1,11 @@
 <?php
 // Call the API to obtain the clients
-
+$locale = strtolower($_SESSION['lang']);
 $fetch = new Fetch();
 $fetch->set_api_key($_ENV["REST_API_KEY"]);
 $fetch->set_base_url($_ENV["REST_API_URL"]);
 
-$banners = json_decode($fetch->get("/content/items/banners"));
+$banners = json_decode($fetch->get("/content/items/banners", array("locale" => $locale)));
 ?>
 
 <div class="swiper-container qrt-main-slider-onepage">

@@ -1,11 +1,11 @@
 <?php
 // Call the API to obtain the prices
-
+$locale = strtolower($_SESSION['lang']);
 $fetch = new Fetch();
 $fetch->set_api_key($_ENV["REST_API_KEY"]);
 $fetch->set_base_url($_ENV["REST_API_URL"]);
 
-$prices = json_decode($fetch->get("/content/items/prices")); ?>
+$prices = json_decode($fetch->get("/content/items/prices", array("locale" => $locale))); ?>
 
 <section class="row">
     <div class="col-lg-12">
@@ -19,8 +19,8 @@ $prices = json_decode($fetch->get("/content/items/prices")); ?>
                     <div class="qrt-price-cost">
                         <?php
                         if ($price->price == 0) { ?>
-                            <div class="qrt-number">
-                                FREE
+                            <div class="qrt-number text-uppercase">
+                                <?php echo L::common_free ?>
                                 <?php echo $price->observations ? "<sup>*</sup>" : "" ?>
                             </div>
                         <?php } else { ?>

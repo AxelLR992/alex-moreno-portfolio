@@ -11,10 +11,10 @@
                         <a class="qrt-mobile-fix" href="/"><?php echo L::nav_home; ?></a>
                     </li>
                     <li>
-                        <a class="qrt-mobile-fix" href="about-me.php">About</a>
+                        <a class="qrt-mobile-fix" href="about-me.php"><?php echo L::nav_about; ?></a>
                     </li>
                     <li>
-                        <a class="qrt-mobile-fix" href="portfolio-fs-masonry-1.html">Portfolio</a>
+                        <a class="qrt-mobile-fix" href="portfolio-fs-masonry-1.html"><?php echo L::nav_portfolio; ?></a>
                         <ul>
                             <li>
                                 <a href="portfolio-half-masonry-1.html">Half masonry</a>
@@ -45,14 +45,14 @@
                         </ul>
                     </li>
                     <li>
-                        <a class="qrt-mobile-fix" href="contact.html">Contact</a>
+                        <a class="qrt-mobile-fix" href="contact.html"><?php echo L::nav_contact; ?></a>
                         <ul>
                             <li><a href="contact.html">Contact type 1</a></li>
                             <li><a href="contact-2.html">Contact type 2</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a class="qrt-mobile-fix" href="blog-list.html">Blog</a>
+                        <a class="qrt-mobile-fix" href="blog-list.html"><?php echo L::nav_blog; ?></a>
                         <ul>
                             <li><a href="blog-list.html">Blog list</a></li>
                             <li><a href="publication.html">Publication</a></li>
@@ -63,12 +63,9 @@
         </div>
     </div>
     <div class="qrt-buttons">
-        <a href="contact-2.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-send-request qrt-anima-link qrt-mr-20"><span>Send request</span></a>
+        <a href="contact-2.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-send-request qrt-anima-link qrt-mr-20"><span><?php echo L::common_sendRequest; ?></span></a>
         <div class="qrt-menu-btn qrt-cursor-color qrt-cursor-scale">
             <span></span>
-        </div>
-        <div class="qrt-search-btn qrt-cursor-color qrt-cursor-scale">
-            <i class="fas fa-search"></i>
         </div>
         <div class="qrt-info-btn qrt-cursor-color qrt-cursor-scale">
             <span></span>
@@ -83,42 +80,36 @@
         <div class="qrt-info-frame">
             <ul class="qrt-table">
                 <li>
-                    <h5>Country</h5>
-                    <span>Canada</span>
+                    <h5><?php echo L::common_country; ?></h5>
+                    <span>México</span>
                 </li>
                 <li>
-                    <h5>City</h5>
-                    <span>Toronto</span>
+                    <h5><?php echo L::common_city; ?></h5>
+                    <span>Villahermosa</span>
                 </li>
                 <li>
-                    <h5>Street</h5>
+                    <h5><?php echo L::common_street; ?></h5>
                     <span>North Avenue 31B, </span>
                 </li>
                 <li>
-                    <h5>Email</h5>
+                    <h5><?php echo L::common_email; ?></h5>
                     <span><a class="qrt-cursor-scale qrt-cursor-color" href="mailto:quarty.inbox@mail.com" data-no-swup>quarty.inbox@mail.com</a></span>
                 </li>
                 <li>
-                    <h5>Phone</h5>
+                    <h5><?php echo L::common_phone; ?></h5>
                     <span><a class="qrt-cursor-scale qrt-cursor-color" href="#." data-no-swup>+9 3(049) 482 95 23</a></span>
                 </li>
             </ul>
             <div class="qrt-divider"></div>
             <div class="qrt-social-links">
                 <div class="qrt-social-links">
-                    <h5 class="qrt-mb-40">We are social</h5>
+                    <h5 class="qrt-mb-40"><?php echo L::common_socialMedia; ?></h5>
                     <ul class="qrt-social-list">
                         <li>
-                            <a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-behance"></i></a>
+                            <a href="https://dribbble.com/alexmorenoac" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-dribbble"></i></a>
                         </li>
                         <li>
-                            <a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-dribbble"></i></a>
-                        </li>
-                        <li>
-                            <a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/alexmorenoac/" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -160,85 +151,14 @@
                 </div>
             </div>
             <div class="qrt-divider"></div>
-            <h5 class="qrt-mb-40">Latest Publications</h5>
-            <div class="qrt-post-frame qrt-sm-post">
-                <a href="publication.html" class="qrt-post-thumb qrt-cursor-scale qrt-anima-link">
-                    <img src="img/blog/1.jpg" alt="thumbnail" />
-                </a>
-                <div class="qrt-post-descr">
-                    <div>
-                        <h4 class="qrt-cursor-color qrt-post-title">
-                            <a href="publication.html" class="qrt-anima-link">Architecture of Observation Towers</a>
-                        </h4>
-                        <div class="qrt-port-short-text">
-                            It seems to be human nature to enjoy a view, getting the
-                            higher ground and taking in our surroundings has become a
-                            significant aspect of architecture across the world.
-                            Observation towers which allow visitors to climb and observe
-                            their surroundings, provide a chance to take in the beauty
-                            of the land while at the same time adding something unique
-                            and impressive to the landscape.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="qrt-post-frame qrt-sm-post">
-                <a href="publication.html" class="qrt-post-thumb qrt-cursor-scale qrt-anima-link">
-                    <img src="img/blog/2.jpg" alt="thumbnail" />
-                </a>
-                <div class="qrt-post-descr">
-                    <div>
-                        <h4 class="qrt-cursor-color qrt-post-title">
-                            <a href="publication.html" class="qrt-anima-link">Model Making In Architecture</a>
-                        </h4>
-                        <div class="qrt-port-short-text">
-                            The importance of model making in architecture could be
-                            thought to have reduced in recent years. With the
-                            introduction of new and innovative architecture design
-                            technology, is there still a place for model making in
-                            architecture? Stanton Williams, director at Stirling
-                            Prize-winning practice, Gavin Henderson, believes that it’s
-                            more important than ever.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="qrt-post-frame qrt-sm-post">
-                <a href="publication.html" class="qrt-post-thumb qrt-cursor-scale qrt-anima-link">
-                    <img src="img/blog/5.jpg" alt="thumbnail" />
-                </a>
-                <div class="qrt-post-descr">
-                    <div>
-                        <h4 class="qrt-cursor-color qrt-post-title">
-                            <a href="publication.html" class="qrt-anima-link">Can Skyscrapers Be Sustainable</a>
-                        </h4>
-                        <div class="qrt-port-short-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad, id, reprehenderit earum quidem error hic deserunt
-                            asperiores suscipit. Magni doloribus, ab cumque modi quidem
-                            doloremque nostrum quam tempora, corporis explicabo nesciunt
-                            accusamus ad architecto sint voluptatibus tenetur ipsa hic
-                            eius.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="qrt-divider"></div>
-            <div class="qrt-subscribe">
-                <h5 class="qrt-mb-40">Subscribe our newsletter</h5>
-                <form>
-                    <input type="text" placeholder="Email" />
-                    <button type="submit" class="qrt-btn qrt-btn-sm">
-                        <i class="far fa-paper-plane"></i>
-                    </button>
-                </form>
-            </div>
-            <div class="qrt-divider"></div>
             <div class="qrt-copy">
                 <!-- author ( Please! Do not delete it. You are awesome! :) -->
                 <div>
-                    © Late <?php echo date("Y"); ?> Quarty.<br />Design by:&#160;
-                    <a class="qrt-cursor-scale qrt-cursor-color" href="https://themeforest.net/user/millerdigitaldesign" target="_blank">Nazar Miller</a>
+                    © <?php echo date("Y"); ?> Alex Moreno.<br />
+                    <?php echo L::common_designBy; ?>:&#160;
+                    <a class="qrt-cursor-scale qrt-cursor-color" href="https://themeforest.net/user/millerdigitaldesign" target="_blank">Nazar Miller</a><br/>
+                    <?php echo L::common_developedBy; ?>:&#160;
+                    <a class="qrt-cursor-scale qrt-cursor-color" href="https://nodeaxan.com/" target="_blank">NodeAxan</a>
                 </div>
             </div>
         </div>
