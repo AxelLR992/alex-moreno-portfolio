@@ -33,7 +33,7 @@
       <div></div>
       <div class="qrt-follower"><i class="fas fa-circle-notch"></i></div>
     </div>
-    <?php include "includes/navbar.php"; ?>
+    <?php echo render_navbar("home"); ?>
     <?php include "includes/leftbar.php"; ?>
     <div class="qrt-curtain"></div>
     <div id="qrt-dynamic-content" class="qrt-dynamic-content">
@@ -126,15 +126,8 @@
 
             <div class="qrt-divider"></div>
 
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="swiper-container qrt-brands-slider" style="overflow: visible">
-                  <div class="swiper-wrapper clients-slider">
-                    <?php include "includes/clients-slider.php"; ?>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <?php include "includes/clients-slider.php"; ?>
+
             <div class="row">
               <div class="col-lg-12">
                 <div class="qrt-call-to-action">
@@ -173,14 +166,6 @@
 
   <!-- main js -->
   <script src="js/main.js"></script>
-
-  <!-- CUSTOM -->
-  <script src="js/environment.js"></script>
-  <!-- i18n -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
-  <script src="js/i18n-config.js"></script> -->
 
   <!-- Fetch data from CMS -->
   <script src="js/custom.js"></script>

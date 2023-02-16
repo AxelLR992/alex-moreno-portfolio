@@ -1,4 +1,5 @@
 <?php
+include "functions/render_navbar.php";
 require_once 'vendor/autoload.php';
 require("./classes/Fetch.php");
 

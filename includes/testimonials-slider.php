@@ -1,6 +1,6 @@
 <?php
 // Call the API to obtain testimonials
-$locale = strtolower($_SESSION['lang']);
+$locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getFallbackLang();
 
 $fetch = new Fetch();
 $fetch->set_api_key($_ENV["REST_API_KEY"]);

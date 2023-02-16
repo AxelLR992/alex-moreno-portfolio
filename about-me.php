@@ -1,3 +1,12 @@
+<?php include "includes/init.php"; ?>
+<?php
+$locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getFallbackLang();
+$fetch = new Fetch();
+$fetch->set_api_key($_ENV["REST_API_KEY"]);
+$fetch->set_base_url($_ENV["REST_API_URL"]);
+
+$owner = json_decode($fetch->get("/content/item/owner", array("locale" => $locale)));
+?>
 <!doctype html>
 <html lang="zxx">
 
@@ -28,19 +37,12 @@
 <body>
 
   <div class="qrt-app">
-    <div class="qrt-preloader">
-      <div class="qrt-preloader-content">
-        <div class="qrt-logo">
-          <img src="img/logo.svg" alt="Quarty">
-        </div>
-        <div id="preloader" class="qrt-preloader-load"></div>
-      </div>
-    </div>
+    <?php include "includes/preloader.php"; ?>
     <div id="cursor" class="qrt-cursor">
       <div></div>
       <div class="qrt-follower"><i class="fas fa-circle-notch"></i></div>
     </div>
-    <?php include "includes/navbar.php"; ?>
+    <?php echo render_navbar("about"); ?>
     <?php include "includes/leftbar.php"; ?>
     <div class="qrt-curtain"></div>
     <div id="qrt-dynamic-content" class="qrt-dynamic-content">
@@ -59,33 +61,31 @@
               <div class="col-lg-6 col-md-12 align-self-center">
 
                 <div class="qrt-member-about">
-                  <h3 class="qrt-mb-5">Viktoria Freeman</h3>
-                  <div class="qrt-el-suptitle">Architect Assistant</div>
+                  <h3 class="qrt-mb-5"><?php echo $owner->fullname ?></h3>
+                  <div class="qrt-el-suptitle"><?php echo $owner->profession ?></div>
 
                   <div class="qrt-divider"></div>
 
                   <ul class="qrt-table">
                     <li>
-                      <h5>Joined Quarty:</h5><span>May 2017</span>
+                      <h5><?php echo L::common_country ?>:</h5><span><?php echo $owner->country ?></span>
                     </li>
                     <li>
-                      <h5>City:</h5><span>Toronto</span>
+                      <h5><?php echo L::common_city ?>:</h5><span><?php echo $owner->city ?></span>
                     </li>
                     <li>
-                      <h5>Education:</h5><span>BNG National University</span>
+                      <h5><?php echo L::common_email ?>:</h5><span><a class="qrt-cursor-color" href="mailto:<?php echo $owner->email ?>"><?php echo $owner->email ?></a></span>
                     </li>
                     <li>
-                      <h5>Email:</h5><span><a class="qrt-cursor-color" href="mailto:quarty.inbox@mail.com">quarty.inbox@mail.com</a></span>
+                      <h5><?php echo L::common_phone ?>:</h5><span><a class="qrt-cursor-color" href="tel:<?php echo $owner->phone ?>"><?php echo $owner->phone ?></a></span>
                     </li>
                   </ul>
 
                   <div class="qrt-divider"></div>
 
                   <ul class="qrt-social-list">
-                    <li><a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-behance"></i></a></li>
-                    <li><a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-dribbble"></i></a></li>
-                    <li><a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://dribbble.com/alexmorenoac" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-dribbble"></i></a></li>
+                    <li><a href="https://www.instagram.com/alexmorenoac/" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-instagram"></i></a></li>
                   </ul>
                 </div>
 
@@ -95,7 +95,7 @@
             <div class="row">
               <div class="col-lg-12">
 
-                <h3 class="qrt-mb-20">About Viktoria</h3>
+                <h3 class="qrt-mb-20"><?php echo L::common_about ?> <?php echo explode(" ", $owner->fullname)[0] ?></h3>
 
               </div>
               <div class="col-lg-12 qrt-mb-25">
@@ -123,7 +123,7 @@
 
               <div class="col-lg-12">
 
-                <h3 class="qrt-mb-40">My Services</h3>
+                <h3 class="qrt-mb-40"><?php echo L::common_services ?></h3>
 
               </div>
 
@@ -206,7 +206,7 @@
             <div class="row">
               <div class="col-lg-12">
 
-                <h3 class="qrt-mb-40">Latest Viktoria's works</h3>
+                <h3 class="qrt-mb-40">Latest <?php echo explode(" ", $owner->fullname)[0] ?>'s works</h3>
 
               </div>
               <div class="col-lg-12">
@@ -477,140 +477,12 @@
 
             <div class="qrt-divider qrt-space-fix"></div>
 
-            <div class="row">
-              <div class="col-lg-12">
-
-                <h3 class="qrt-mb-40">Testimonials</h3>
-
-              </div>
-              <div class="col-lg-12">
-
-                <div class="swiper-container qrt-testimonials-slider" style="overflow: visible">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="qrt-testimonial">
-                        <div class="qrt-testimonial-header">
-                          <img src="img/testimonials/t1.jpg" alt="customer">
-                          <div class="qrt-testimonial-name">
-                            <h4 class="qrt-mb-5">Paul Trueman</h4>
-                            <div class="qrt-el-suptitle">Chief Architect</div>
-                          </div>
-                        </div>
-                        <div class="qrt-testimonial-text">
-                          We worked with Quarty Studio for approximately 2 years on the complete overhaul of our house. This included the design of the project, and the execution of the work. Quarty provided excellent design ideas but
-                          were also
-                          indispensable in managing the practical side of the build.
-                        </div>
-                        <ul class="qrt-stars">
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="qrt-testimonial">
-                        <div class="qrt-testimonial-header">
-                          <img src="img/testimonials/t2.jpg" alt="customer">
-                          <div class="qrt-testimonial-name">
-                            <h4 class="qrt-mb-5">Emma Newman</h4>
-                            <div class="qrt-el-suptitle">Chief Architect</div>
-                          </div>
-                        </div>
-                        <div class="qrt-testimonial-text">
-                          We engaged Paul Trueman of quarty Studio to manage the planning process and to design and manage a full renovation and remodelling of our 1930s house. We really enjoyed working with Paul. We would not hesitate to
-                          recommend Paul and Quarty.
-                        </div>
-                        <ul class="qrt-stars">
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="qrt-testimonial">
-                        <div class="qrt-testimonial-header">
-                          <img src="img/testimonials/t3.jpg" alt="customer">
-                          <div class="qrt-testimonial-name">
-                            <h4 class="qrt-mb-5">Viktoria freeman</h4>
-                            <div class="qrt-el-suptitle">Chief Architect</div>
-                          </div>
-                        </div>
-                        <div class="qrt-testimonial-text">
-                          We worked with Quarty Studio for approximately 2 years on the complete overhaul of our house. This included the design of the project, and the execution of the work. Quarty provided excellent design ideas but
-                          were also
-                          indispensable in managing the practical side of the build.
-                        </div>
-                        <ul class="qrt-stars">
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li class="qrt-empty"><i class="fas fa-star"></i></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-6">
-
-                <div class="swiper-testi-pagination qrt-cursor-color qrt-cursor-scale"></div>
-
-              </div>
-              <div class="col-6">
-
-                <div class="qrt-slider-nav">
-                  <!-- prev -->
-                  <div class="qrt-slider-prev qrt-testi-prev qrt-cursor-color qrt-cursor-scale"><i class="fas fa-arrow-left"></i></div>
-                  <!-- next -->
-                  <div class="qrt-slider-next qrt-testi-next qrt-cursor-color qrt-cursor-scale"><i class="fas fa-arrow-right"></i></div>
-                </div>
-
-              </div>
-
-
-            </div>
+            <?php include "includes/testimonials-slider.php"; ?>
 
             <div class="qrt-divider"></div>
 
-            <div class="row">
-              <div class="col-lg-12">
+            <?php include "includes/clients-slider.php"; ?>
 
-                <div class="swiper-container qrt-brands-slider" style="overflow: visible">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="img/brands/b1.svg" alt="brand">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/brands/b2.svg" alt="brand">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/brands/b3.svg" alt="brand">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/brands/b4.svg" alt="brand">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/brands/b5.svg" alt="brand">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/brands/b6.svg" alt="brand">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/brands/b7.svg" alt="brand">
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
             <div class="row">
               <div class="col-lg-12">
 
@@ -633,7 +505,7 @@
                   <span></span>
                 </div>
                 <div class="qrt-banner-title">
-                  <h2 class="qrt-white qrt-mb-10">Viktoria F.</h2>
+                  <h2 class="qrt-white qrt-mb-10"><?php echo $owner->fullname ?></h2>
                   <div class="qrt-divider-2"></div>
                   <div class="qrt-text qrt-white qrt-mb-20">Dolor sit amet, consectetur adipisicing elit. <br>Vel excepturi, earum inventore.</div>
                   <a href="contact.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-anima-link"><span>Get in touch</span></a>
@@ -669,13 +541,6 @@
 
   <!-- main js -->
   <script src="js/main.js"></script>
-
-  <!-- CUSTOM -->
-  <!-- i18n -->
-  <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
-  <script src="js/i18n-config.js"></script>
 
 </body>
 
