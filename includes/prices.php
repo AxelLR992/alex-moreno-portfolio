@@ -5,7 +5,8 @@ $fetch = new Fetch();
 $fetch->set_api_key($_ENV["REST_API_KEY"]);
 $fetch->set_base_url($_ENV["REST_API_URL"]);
 
-$prices = json_decode($fetch->get("/content/items/prices", array("locale" => $locale))); ?>
+$prices = json_decode($fetch->get("/content/items/prices", array("locale" => $locale))); 
+?>
 
 <section class="row">
     <div class="col-lg-12">
@@ -13,7 +14,7 @@ $prices = json_decode($fetch->get("/content/items/prices", array("locale" => $lo
     </div>
     <?php foreach ($prices as $price) { ?>
         <div class="col-lg-3">
-            <div class="qrt-a qrt-price">
+            <div class="qrt-a qrt-price <?php echo $price->{'popular-flag'} == true ? "qrt-popular-price" : "" ?>">
                 <div class="qrt-price-body">
                     <h5 class="qrt-mb-20"><?php echo $price->title ?></h5>
                     <div class="qrt-price-cost">

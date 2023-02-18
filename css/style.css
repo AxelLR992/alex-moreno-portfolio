@@ -1183,10 +1183,11 @@ body {
 
 .qrt-scroll-hint {
   position: absolute;
+  width: 100%;
   top: 40px;
   right: 40px;
 }
-.qrt-scroll-hint span {
+.qrt-scroll-hint span:first-child {
   display: block;
   position: relative;
   width: 25px;
@@ -1194,20 +1195,7 @@ body {
   border-radius: 15px;
   border: solid 2px rgb(70, 77, 210);
 }
-.qrt-scroll-hint span:before {
-  content: "Scroll Down";
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 10px;
-  width: 100px;
-  text-align: right;
-  position: absolute;
-  bottom: -75px;
-  right: -38px;
-  color: #fff;
-  transform: rotate(90deg);
-}
-.qrt-scroll-hint span:after {
+.qrt-scroll-hint span:first-child:after {
   content: "";
   width: 3px;
   height: 3px;
@@ -1217,6 +1205,18 @@ body {
   top: 10px;
   left: 45%;
   animation: mouse 1s ease-in-out infinite;
+}
+.qrt-scroll-hint span:last-child {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  width: 100px;
+  text-align: right;
+  position: absolute;
+  color: #fff;
+  left: 12px;
+  top: 101px;
+  transform: translateX(-50%) rotate(90deg);
 }
 
 .qrt-hint-frame {

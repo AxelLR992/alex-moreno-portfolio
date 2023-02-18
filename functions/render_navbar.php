@@ -1,5 +1,5 @@
 <?php
-function render_navbar(string $active_element)
+function render_navbar(string $active_element, i18n $i18n)
 {
     $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getFallbackLang();
     $fetch = new Fetch();
@@ -73,10 +73,16 @@ function render_navbar(string $active_element)
                             <h5 class="qrt-mb-40">' . L::common_socialMedia . '</h5>
                             <ul class="qrt-social-list">
                                 <li>
+                                    <a href="https://www.behance.net/alexmoreno8" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-behance"></i></a>
+                                </li>
+                                <li>
                                     <a href="https://dribbble.com/alexmorenoac" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-dribbble"></i></a>
                                 </li>
                                 <li>
                                     <a href="https://www.instagram.com/alexmorenoac/" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/alexmorenoac" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-facebook"></i></a>
                                 </li>
                             </ul>
                         </div>

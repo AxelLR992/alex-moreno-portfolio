@@ -1,6 +1,6 @@
 <?php
-include "functions/render_navbar.php";
 require_once 'vendor/autoload.php';
+include "functions/render_navbar.php";
 require("./classes/Fetch.php");
 
 // Load .env

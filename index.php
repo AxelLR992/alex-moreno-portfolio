@@ -33,7 +33,7 @@
       <div></div>
       <div class="qrt-follower"><i class="fas fa-circle-notch"></i></div>
     </div>
-    <?php echo render_navbar("home"); ?>
+    <?php echo render_navbar("home", $i18n); ?>
     <?php include "includes/leftbar.php"; ?>
     <div class="qrt-curtain"></div>
     <div id="qrt-dynamic-content" class="qrt-dynamic-content">
@@ -81,40 +81,7 @@
 
             <div class="qrt-divider"></div>
 
-            <div class="row">
-              <div class="col-lg-3 col-sm-6">
-                <div class="qrt-counter-frame">
-                  <div class="qrt-counter-box">
-                    <span class="qrt-counter">10</span>
-                  </div>
-                  <h5>Years Experience</h5>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="qrt-counter-frame">
-                  <div class="qrt-counter-box">
-                    <span class="qrt-counter">143</span>
-                  </div>
-                  <h5>Completed Projects</h5>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="qrt-counter-frame">
-                  <div class="qrt-counter-box">
-                    <span class="qrt-counter">114</span>
-                  </div>
-                  <h5>Happy Customers</h5>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="qrt-counter-frame">
-                  <div class="qrt-counter-box">
-                    <span class="qrt-counter">20</span>
-                  </div>
-                  <h5>Honors and Awards</h5>
-                </div>
-              </div>
-            </div>
+            <?php include "includes/achievements.php"; ?>
 
             <div class="qrt-divider qrt-space-fix"></div>
 

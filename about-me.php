@@ -42,7 +42,7 @@ $owner = json_decode($fetch->get("/content/item/owner", array("locale" => $local
       <div></div>
       <div class="qrt-follower"><i class="fas fa-circle-notch"></i></div>
     </div>
-    <?php echo render_navbar("about"); ?>
+    <?php echo render_navbar("about", $i18n); ?>
     <?php include "includes/leftbar.php"; ?>
     <div class="qrt-curtain"></div>
     <div id="qrt-dynamic-content" class="qrt-dynamic-content">
@@ -84,8 +84,10 @@ $owner = json_decode($fetch->get("/content/item/owner", array("locale" => $local
                   <div class="qrt-divider"></div>
 
                   <ul class="qrt-social-list">
+                    <li><a href="https://www.behance.net/alexmoreno8" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-behance"></i></a></li>
                     <li><a href="https://dribbble.com/alexmorenoac" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-dribbble"></i></a></li>
                     <li><a href="https://www.instagram.com/alexmorenoac/" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/alexmorenoac" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-facebook"></i></a></li>
                   </ul>
                 </div>
 
@@ -158,48 +160,7 @@ $owner = json_decode($fetch->get("/content/item/owner", array("locale" => $local
 
             <div class="qrt-divider qrt-space-fix"></div>
 
-            <div class="row">
-              <div class="col-lg-3 col-sm-6">
-
-                <div class="qrt-counter-frame">
-                  <div class="qrt-counter-box">
-                    <span class="qrt-counter">10</span>
-                  </div>
-                  <h5>Years Experience</h5>
-                </div>
-
-              </div>
-              <div class="col-lg-3 col-sm-6">
-
-                <div class="qrt-counter-frame">
-                  <div class="qrt-counter-box">
-                    <span class="qrt-counter">143</span>
-                  </div>
-                  <h5>Completed Projects</h5>
-                </div>
-
-              </div>
-              <div class="col-lg-3 col-sm-6">
-
-                <div class="qrt-counter-frame">
-                  <div class="qrt-counter-box">
-                    <span class="qrt-counter">114</span>
-                  </div>
-                  <h5>Happy Customers</h5>
-                </div>
-
-              </div>
-              <div class="col-lg-3 col-sm-6">
-
-                <div class="qrt-counter-frame">
-                  <div class="qrt-counter-box">
-                    <span class="qrt-counter">20</span>
-                  </div>
-                  <h5>Honors and Awards</h5>
-                </div>
-
-              </div>
-            </div>
+            <?php include "./includes/achievements.php" ?>
 
             <div class="qrt-divider qrt-space-fix"></div>
 
@@ -405,75 +366,7 @@ $owner = json_decode($fetch->get("/content/item/owner", array("locale" => $local
 
             <div class="qrt-divider qrt-space-fix"></div>
 
-            <div class="row">
-              <div class="col-lg-12">
-
-                <h3 class="qrt-mb-40">Prices</h3>
-
-              </div>
-              <div class="col-lg-4">
-
-                <div class="qrt-a qrt-price">
-                  <div class="qrt-price-body">
-                    <h5 class="qrt-mb-20">Starter Price</h5>
-                    <div class="qrt-price-cost">
-                      <div class="qrt-number">FREE<sup>*</sup></div>
-                    </div>
-                    <ul class="qrt-price-list">
-                      <li>Ui Design</li>
-                      <li>Web Development</li>
-                      <li class="qrt-empty-item">Logo design</li>
-                      <li class="qrt-empty-item">SEO optimization</li>
-                      <li class="qrt-empty-item">Wordpress integration</li>
-                    </ul>
-                    <a class="qrt-btn qrt-btn-md qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Order now</span></a>
-                    <div class="qrt-asterisk"><sup>*</sup>Free only when ordering paid services</div>
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-4">
-
-                <div class="qrt-a qrt-price qrt-popular-price">
-                  <div class="qrt-price-body">
-                    <h5 class="qrt-mb-20">Hourly payment</h5>
-                    <div class="qrt-price-cost">
-                      <div class="qrt-number"><span>$</span>29<span>h</span></div>
-                    </div>
-                    <ul class="qrt-price-list">
-                      <li>Ui Design</li>
-                      <li>Web Development</li>
-                      <li>Logo design</li>
-                      <li class="qrt-empty-item">SEO optimization</li>
-                      <li class="qrt-empty-item">Wordpress integration</li>
-                    </ul>
-                    <a class="qrt-btn qrt-btn-md qrt-btn-color qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Order now</span></a>
-                  </div>
-
-                </div>
-
-              </div>
-              <div class="col-lg-4">
-
-                <div class="qrt-a qrt-price">
-                  <div class="qrt-price-body">
-                    <h5 class="qrt-mb-20">Full time</h5>
-                    <div class="qrt-price-cost">
-                      <div class="qrt-number"><span>$</span>2999<span>m</span></div>
-                    </div>
-                    <ul class="qrt-price-list">
-                      <li>Ui Design</li>
-                      <li>Web Development</li>
-                      <li>Logo design</li>
-                      <li>SEO optimization</li>
-                      <li>Wordpress integration</li>
-                    </ul>
-                    <a class="qrt-btn qrt-btn-md qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Order now</span></a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
+            <?php include "includes/prices.php"; ?>
 
             <div class="qrt-divider qrt-space-fix"></div>
 
@@ -503,6 +396,7 @@ $owner = json_decode($fetch->get("/content/item/owner", array("locale" => $local
               <div class="qrt-overlay">
                 <div class="qrt-scroll-hint">
                   <span></span>
+                  <span><?php echo L::common_scrollDown ?></span>
                 </div>
                 <div class="qrt-banner-title">
                   <h2 class="qrt-white qrt-mb-10"><?php echo $owner->fullname ?></h2>
