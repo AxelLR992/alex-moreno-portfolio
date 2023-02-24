@@ -1,6 +1,9 @@
 <?php include "includes/init.php"; ?>
+<?php
+$locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getFallbackLang();
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $locale ?>">
 
 <head>
   <!-- Required meta tags -->
@@ -99,7 +102,8 @@
               <div class="col-lg-12">
                 <div class="qrt-call-to-action">
                   <h4>Do you have a project?</h4>
-                  <a class="qrt-btn qrt-btn-sm qrt-btn-color qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Let's discuss</span></a>
+                  <a class="qrt-btn qrt-btn-sm qrt-btn-color qrt-cursor-scale qrt-anima-link"
+                    href="contact.html"><span>Let's discuss</span></a>
                 </div>
               </div>
             </div>
@@ -133,9 +137,6 @@
 
   <!-- main js -->
   <script src="js/main.js"></script>
-
-  <!-- Fetch data from CMS -->
-  <script src="js/custom.js"></script>
 </body>
 
 </html>
