@@ -26,7 +26,7 @@ $banners = json_decode($fetch->get("/content/items/banners", array("locale" => $
             <div class="swiper-slide">
                 <div class="qrt-project-cover">
                     <div class="qrt-image-frame">
-                        <img class="" src="<?php echo $_ENV['ASSETS_URL'] . $banner->{'background-image'}->path ?>" alt="<?php echo $banner->title ?>" data-swiper-parallax="400" data-swiper-parallax-scale="1.4" />
+                        <img src="<?php echo $_ENV['ASSETS_URL'] . $banner->{'background-image'}->path ?>" alt="<?php echo $banner->title ?>" data-swiper-parallax="400" data-swiper-parallax-scale="1.4" />
                     </div>
                     <div class="qrt-overlay">
                         <div class="qrt-parallax-fix" data-swiper-parallax-x="-400" data-swiper-parallax-duration="1000">

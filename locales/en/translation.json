@@ -24,6 +24,10 @@
     "free": "Free",
     "about": "About",
     "services": "My services",
-    "scrollDown": "Scroll Down"
+    "scrollDown": "Scroll Down",
+    "prices": "Prices",
+    "getInTouch": "Get in touch",
+    "contactInfo": "Contact Info",
+    "location": "Location"
   }
 }
