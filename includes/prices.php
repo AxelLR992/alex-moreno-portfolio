@@ -47,11 +47,14 @@ $prices = json_decode($fetch->get("/content/items/prices", array("locale" => $lo
                             </li>
                         <?php } ?>
                         <?php
-                        foreach ($price->{'not-included-features'} as $feature) { ?>
-                            <li class="qrt-empty-item">
-                                <?php echo $feature ?>
-                            </li>
-                        <?php } ?>
+                        if (isset($price->{'not-included-features'})) {
+
+                            foreach ($price->{'not-included-features'} as $feature) { ?>
+                                <li class="qrt-empty-item">
+                                    <?php echo $feature ?>
+                                </li>
+                        <?php }
+                        } ?>
                     </ul>
                     <a class="qrt-btn qrt-btn-md qrt-cursor-scale qrt-anima-link" href="contact.php"><span>Order
                             now</span><i class="fas fa-arrow-right"></i></a>
