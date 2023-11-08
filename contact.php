@@ -57,19 +57,6 @@ $owner = json_decode($fetch->get("/content/item/owner", array("locale" => $local
 
                 <div class="qrt-page-cover">
                   <img src="img/banners/cover2.jpg" alt="our office">
-                  <div class="qrt-about-info">
-                    <div class="qrt-cover-info">
-                      <ul class="qrt-table">
-                        <li>
-                          <h5 class="qrt-white">Main office</h5><span>Toronto, Canada</span></a>
-                        </li>
-                        <li>
-                          <h5 class="qrt-white">Adress:</h5><a href="https://goo.gl/maps/MAa6Au5d9ZMgSfBV7"
-                            target="_blank" data-no-swup><span>2420 Jane St, Downsview</span></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
                 </div>
 
               </div>
