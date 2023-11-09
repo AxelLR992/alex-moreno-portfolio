@@ -47,37 +47,68 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
         <div class="qrt-content-frame">
           <div class="qrt-left">
             <div class="row">
-              <div class="col-lg-4">
-                <h3 class="qrt-mb-40">
-                  We are creative <br />building - design company
-                </h3>
+              <div class="col-lg-12">
+                <div class="containerElements">
+                  <div class="imageleft">
+                    <img src="img/blog/Picture1Right_Left.jpg" alt="Image1">
+                  </div> 
+                  <div class="content1">
+                    <h3 class="qrt-mb-40">
+                      Meaningful Logos
+                    </h3>
+                    <p>
+                      With a keen attention to detail and big passion for the craft, 
+                      we develop purposeful logotypes. We merge creativity with 
+                      thoughtful storytelling, creating not only symbols, but visual 
+                      ambassadors of their brands, that catch the eyes of customers 
+                      and resonate with audiences, to help you launch 
+                      industry-leading businesses.
+                    </p>
+                  </div> 
+                </div>  
+                <div class="containerElements2">
+                  <div class="imageRight">
+                    <img src="img/blog/Picture2Right_Left.jpg" alt="Image1">
+                  </div>
+                  <div class="content1">
+                    <h3>
+                      Branding so Irresistible <br> You’ll be inevitable
+                    </h3>
+                    <p>
+                      We create design materials that embody the essence of your 
+                      brand, shaping a cohesive visual narrative. We specialize in 
+                      distilling the very spirit of your business into a compelling 
+                      and unforgettable visual experience. Elevate your presence, 
+                      captivate your audience, and leave an indelible 
+                      mark in your audience.
+                    </p>
+                  </div>
+                </div>
+                <div class="containerElements">
+                  <div class="imageleft">
+                    <img src="img/blog/Picture3Right_Left.jpg" alt="Image1">
+                  </div> 
+                  <div class="content1">
+                    <h3 class="qrt-mb-40">
+                      Striking key visuals
+                    </h3>
+                    <p>
+                      As the market becomes more saturated each day, our powerful 
+                      key arts can give your company the upper hand when advertising 
+                      your products and services. We transform your vision into 
+                      captivating images, enhancing your message and leaving a 
+                      lasting impact on your clients.
+                    </p>
+                  </div> 
+                </div> 
               </div>
-              <div class="col-lg-8 qrt-mb-25">
-                <p>
-                  We have intentionally never developed a stylistic formula
-                  for our work, which is why our projects never quite look or
-                  feel the same. Each of our spaces is the result of our
-                  ability to listen, which has turned our designs and
-                  buildings into personal reflections of our clients’
-                  personalities and values, which we co-construct through
-                  research, workshops and surveys.
-                </p>
 
-                <p>
-                  In our studio, every project is an open ended enquiry,
-                  helping people to challenge their existing state and work
-                  towards an alternative, desired one. We provide guidance,
-                  expertise and experience across all phases in the
-                  architectural process, ranging from thinking, to designing,
-                  building, and ultimately finding the right way to
-                  communicate the results.
-                </p>
-              </div>
               <div class="col-lg-12">
                 <blockquote>
-                  Change is an opportunity! We want to lead people towards
-                  durable solutions and designs that enhance feelings of
-                  closeness, wellbeing and hopefully, happiness.
+                  Design is not what you see, but how you look at the world.
+                  <div class="image-container">
+                    <img src="img/blog/Picture4.jpg" alt="PictureBack">
+                  </div>  
                 </blockquote>
               </div>
             </div>
