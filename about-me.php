@@ -147,8 +147,10 @@ $owner = json_decode($fetch->get("/content/item/owner", array("locale" => $local
               <div class="col-lg-12">
 
                 <blockquote>
-                  Change is an opportunity! We want to lead people towards durable solutions and designs that enhance
-                  feelings of closeness, wellbeing and hopefully, happiness.
+                  Design is not what you see, but how you look at the world.
+                  <div class="image-container">
+                    <img src="img/blog/Picture4.jpg" alt="PictureBack">
+                  </div>  
                 </blockquote>
 
               </div>
