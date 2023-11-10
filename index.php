@@ -71,7 +71,7 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
                     <img src="img/blog/Picture2Right_Left.jpg" alt="Image1">
                   </div>
                   <div class="content1">
-                    <h3>
+                    <h3 class="qrt-mb-40">
                       Branding so Irresistible <br> You’ll be inevitable
                     </h3>
                     <p>
