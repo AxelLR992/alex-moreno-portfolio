@@ -74,7 +74,7 @@ $owner = json_decode($fetch->get("/content/item/owner", array("locale" => $local
 
                 <div class="qrt-icon-box">
                   <!-- icon -->
-                  <img class="mb-20" src="./img/icons/phone-outline.svg" alt="Phone icon">
+                  <img class="mb-20 contact-icons" src="./img/icons/phone-outline.svg" alt="Phone icon">
                   <!-- title -->
                   <h4 class="mb-20">
                     <?php echo L::common_phone ?>
@@ -90,7 +90,7 @@ $owner = json_decode($fetch->get("/content/item/owner", array("locale" => $local
 
                 <div class="qrt-icon-box">
                   <!-- icon -->
-                  <img class="mb-20" src="./img/icons/email-outline.svg" alt="Email icon">
+                  <img class="mb-20 contact-icons" src="./img/icons/email-outline.svg" alt="Email icon">
                   <!-- title -->
                   <h4 class="mb-20">
                     <?php echo L::common_email ?>

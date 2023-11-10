@@ -2195,6 +2195,9 @@ content
   width: 120px;
   margin-bottom: 20px;
 }
+.qrt-icon-box .contact-icons {
+  width: 50px;
+}
 .qrt-icon-box h4 {
   margin-bottom: 20px;
 }
