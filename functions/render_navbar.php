@@ -23,8 +23,8 @@ function render_navbar(string $active_element, i18n $i18n)
                             <li ' . ($active_element == "about" ? 'class="current-menu-item"' : "") . '>
                                 <a class="qrt-mobile-fix" href="about-me.php">' . L::nav_about . '</a>
                             </li>
-                            <li ' . ($active_element == "portoflio" ? 'class="current-menu-item"' : "") . '>
-                                <a class="qrt-mobile-fix" href="portfolio-fs-masonry-1.html">' . L::nav_portfolio . '</a>
+                            <li ' . ($active_element == "portfolio" ? 'class="current-menu-item"' : "") . '>
+                                <a class="qrt-mobile-fix" href="portfolio-fs-masonry-1.php">' . L::nav_portfolio . '</a>
                             </li>
                             <li ' . ($active_element == "contact" ? 'class="current-menu-item"' : "") . '>
                                 <a class="qrt-mobile-fix" href="contact.php">' . L::nav_contact . '</a>
