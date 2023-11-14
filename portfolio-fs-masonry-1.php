@@ -7,7 +7,7 @@ $fetch = new Fetch();
 $fetch->set_api_key($_ENV["REST_API_KEY"]);
 $fetch->set_base_url($_ENV["REST_API_URL"]);
 
-$owner = json_decode($fetch->get("/content/item/portfolio_content", array("locale" => $locale)));
+$owner = json_decode($fetch->get("/content/item/owner", array("locale" => $locale)));
 ?>
 <!doctype html>
 <html lang="<?php echo $locale ?>">
