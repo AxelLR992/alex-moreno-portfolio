@@ -49,9 +49,6 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
             <div class="row">
               <div class="col-lg-12">
                 <div class="containerElements">
-                  <div class="imageleft">
-                    <img src="img/blog/Picture1Right_Left.jpg" alt="Image1">
-                  </div> 
                   <div class="content1">
                     <h3 class="qrt-mb-40">
                       Meaningful Logos
@@ -65,14 +62,14 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
                       industry-leading businesses.
                     </p>
                   </div> 
+                  <div class="imageWhite">
+                    <img src="img/imgIndex/logos-isometric-mockup.png" alt="Image1">
+                  </div> 
                 </div>  
                 <div class="containerElements2">
-                  <div class="imageRight">
-                    <img src="img/blog/Picture2Right_Left.jpg" alt="Image1">
-                  </div>
                   <div class="content1">
                     <h3 class="qrt-mb-40">
-                      Branding so Irresistible <br> You’ll be inevitable
+                      Branding so Irresistible You’ll be inevitable
                     </h3>
                     <p>
                       We create design materials that embody the essence of your 
@@ -83,11 +80,11 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
                       mark in your audience.
                     </p>
                   </div>
+                  <div class="imagePurple">
+                    <img src="img/imgIndex/brand-book-homepage-mockup.png" alt="Image1">
+                  </div> 
                 </div>
                 <div class="containerElements">
-                  <div class="imageleft">
-                    <img src="img/blog/Picture3Right_Left.jpg" alt="Image1">
-                  </div> 
                   <div class="content1">
                     <h3 class="qrt-mb-40">
                       Striking key visuals
@@ -99,6 +96,9 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
                       captivating images, enhancing your message and leaving a 
                       lasting impact on your clients.
                     </p>
+                  </div> 
+                  <div class="imageWhite">
+                    <img src="img/imgIndex/key art mockup.png" alt="Image1">
                   </div> 
                 </div> 
               </div>

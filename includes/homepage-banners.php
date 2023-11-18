@@ -25,9 +25,19 @@ $banners = json_decode($fetch->get("/content/items/banners", array("locale" => $
         foreach ($banners as $banner) { ?>
             <div class="swiper-slide">
                 <div class="qrt-project-cover">
+                    <?php if (!$banner->{"is-video"}){ ?>
+                        <div class="qrt-image-frame">
+                            <img src="<?php echo $_ENV['ASSETS_URL'] . $banner->{'background-image'}->path ?>" alt="<?php echo $banner->title ?>" data-swiper-parallax="400" data-swiper-parallax-scale="1.4" />
+                        </div>
+                    <?php } ?>
+                    <?php if (isset($banner->{"is-video"}) && $banner->{"is-video"}){ ?>
                     <div class="qrt-image-frame">
-                        <img src="<?php echo $_ENV['ASSETS_URL'] . $banner->{'background-image'}->path ?>" alt="<?php echo $banner->title ?>" data-swiper-parallax="400" data-swiper-parallax-scale="1.4" />
+                        <video loop muted playsinline autoplay data-swiper-parallax="400" data-swiper-parallax-scale="1.4">
+                            <source src="<?php echo $_ENV['ASSETS_URL'] . $banner->{'background-image'}->path ?>" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                        </video>
                     </div>
+                    <?php } ?>
                     <div class="qrt-overlay">
                         <div class="qrt-parallax-fix" data-swiper-parallax-x="-400" data-swiper-parallax-duration="1000">
                             <div class="qrt-banner-title">

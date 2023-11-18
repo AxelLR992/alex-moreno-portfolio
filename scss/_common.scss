@@ -68,8 +68,6 @@ a:hover {
   .containerElements2{
     flex-wrap: wrap;
     justify-content: center;
-  }.imageRight img{
-    margin-right: 25px;
   }
 }
 /* ----- title defaults ----- */
@@ -119,21 +117,20 @@ h2 {
 /* Changes Carlos */
 
 h3 {
-  font-size: 20px;
+  font-size: 35px;
   font-weight: 800;
-}
-
-
-.imageleft img{
-  width: 150px;
-  margin-right: 25px;
-  margin-block-end: 15px;
-}
-
-.imageRight img{
-  width: 150px;
   margin: normal;
-  margin-block-end: 15px;
+}
+
+
+.imageWhite img{
+  width: 400px;
+  margin: normal;
+}
+
+.imagePurple img{
+  width: 450px;
+  margin: normal;
 }
 
 .content1{
@@ -145,7 +142,6 @@ h3 {
 }
 .containerElements2{
   display: flex;
-  flex-direction: row-reverse;
 }
 
 /* Fin changes*/
