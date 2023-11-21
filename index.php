@@ -62,14 +62,15 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
                       industry-leading businesses.
                     </p>
                   </div> 
+                  <div class="mark"></div>
                   <div class="imageWhite">
                     <img src="img/imgIndex/logos-isometric-mockup.png" alt="Image1">
                   </div> 
                 </div>  
                 <div class="containerElements2">
-                  <div class="content1">
+                  <div class="content2">
                     <h3 class="qrt-mb-40">
-                      Branding so Irresistible You’ll be inevitable
+                      Branding so Irresistible <br> You’ll be inevitable
                     </h3>
                     <p>
                       We create design materials that embody the essence of your 
@@ -80,6 +81,7 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
                       mark in your audience.
                     </p>
                   </div>
+                  <div class="mark"></div>
                   <div class="imagePurple">
                     <img src="img/imgIndex/brand-book-homepage-mockup.png" alt="Image1">
                   </div> 
@@ -97,6 +99,7 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
                       lasting impact on your clients.
                     </p>
                   </div> 
+                  <div class="mark"></div>
                   <div class="imageWhite">
                     <img src="img/imgIndex/key art mockup.png" alt="Image1">
                   </div> 
@@ -104,12 +107,12 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
               </div>
 
               <div class="col-lg-12">
-                <blockquote>
-                  Design is not what you see, but how you look at the world.
+                <div class="CardPresentation">
+                  <div class="text-container"> Design is not what you see,<br> but how you look at the world. </div>
                   <div class="image-container">
                     <img src="img/blog/Picture4.jpg" alt="PictureBack">
                   </div>  
-                </blockquote>
+                </div>
               </div>
             </div>
 

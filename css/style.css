@@ -124,14 +124,6 @@ a:hover {
   .qrt-sm-text-left {
     text-align: left;
   }
-  .containerElements {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .containerElements2 {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
 /* ----- title defaults ----- */
 h1,
@@ -185,34 +177,81 @@ h2 {
 
 /* Changes Carlos */
 h3 {
-  font-size: 35px;
+  margin-top: 15px;
+  font-size: 75px;
   font-weight: 800;
-  margin: normal;
 }
 
 .imageWhite img {
-  width: 400px;
-  margin: normal;
+  width: 850px;
+  margin-bottom: 15px;
 }
 
 .imagePurple img {
-  width: 450px;
-  margin: normal;
+  width: 850px;
+  margin-bottom: 15px;
 }
 
 .content1 {
-  margin: 22px;
+  text-align: center;
 }
 
 .containerElements {
-  display: flex;
+  display: grid;
+  place-items: center;
+}
+
+.mark {
+  width: 210px;
+  height: 50px;
+  background-color: #464DD2;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.content2 {
+  text-align: center;
 }
 
 .containerElements2 {
-  display: flex;
+  display: grid;
+  place-items: center;
+  background-color: #eeeef6;
 }
 
-/* Fin changes*/
+@media (max-width: 768px) {
+  .containerElements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .imageWhite img {
+    width: 430px;
+    margin-bottom: 15px;
+  }
+  .imagePurple img {
+    width: 430px;
+    margin-bottom: 15px;
+  }
+  h3.qrt-mb-40 {
+    font-size: 32px;
+    margin-top: 15px;
+  }
+  .containerElements2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  p {
+    font-size: 12px;
+  }
+  .mark {
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+  }
+}
+/* End changes*/
 h4 {
   font-size: 16px;
 }
@@ -242,49 +281,95 @@ h5 {
 }
 
 /* ----- quote ----- */
-blockquote {
-  color: rgb(29, 233, 182);
+.CardPresentation {
+  color: #fff;
   font-size: 1rem;
-  background: rgb(70, 77, 210);
+  background: #232532;
   padding: 30px 30px 240px 35px;
   font-weight: 600;
   font-style: italic;
   position: relative;
   text-align: center;
 }
-blockquote:before {
+.CardPresentation:before {
   position: absolute;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f10d";
   font-size: 16px;
   opacity: 0.5;
-  color: rgb(29, 233, 182);
-  top: 13px;
-  left: 13px;
+  color: #414455;
+  top: 50px;
+  left: 260px;
 }
-blockquote:after {
+.CardPresentation:after {
   position: absolute;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f10d";
   font-size: 16px;
   opacity: 0.5;
-  color: #fff;
-  top: 13px;
-  right: 13px;
+  color: #414455;
+  top: 77px;
+  right: 477px;
   transform: rotate(180deg);
 }
-blockquote .image-container {
+.CardPresentation .image-container {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
 }
-blockquote .image-container img {
+.CardPresentation .image-container img {
   width: 175px;
 }
+.CardPresentation .text-container {
+  position: absolute;
+  top: 30%;
+  left: 417px;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
 
+@media (max-width: 768px) {
+  .CardPresentation .image-container {
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+  }
+  .CardPresentation .text-container {
+    top: 120px;
+    left: 290px;
+    font-size: 15px;
+  }
+  .CardPresentation:before {
+    top: 43px;
+    left: 218px;
+  }
+  .CardPresentation:after {
+    top: 165px;
+    right: 45px;
+  }
+}
+@media (max-width: 429px) {
+  .CardPresentation .image-container {
+    width: 140px;
+  }
+  .CardPresentation .text-container {
+    top: 132px;
+    left: 270px;
+    font-size: 13px;
+  }
+  .CardPresentation:before {
+    top: 47px;
+    left: 218px;
+  }
+  .CardPresentation:after {
+    top: 187px;
+    right: 33px;
+  }
+}
 /* ----- divider ----- */
 .qrt-divider {
   background: rgb(82, 85, 90);
@@ -464,7 +549,7 @@ blockquote .image-container img {
 }
 
 .qrt-mb-40 {
-  margin-bottom: 10px !important;
+  margin-bottom: 15px !important;
 }
 
 .qrt-mb-30 {
