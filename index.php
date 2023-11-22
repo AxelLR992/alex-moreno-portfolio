@@ -108,20 +108,20 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
 
               <div class="col-lg-12">
                 <div class="CardPresentation">
-                  <div>
+                <div class="image-container">
+                    <img src="img/blog/Picture4.jpg" alt="PictureBack">
+                  </div> 
+                  <div class="Block">
                     <div class="text-container"> Design is not what you see,<br> but how you look at the world. </div>
                     <div class="text-container2"> Alex Moreno</div>
                     <div class="text-container3"> Graphic Design </div>
-                    <div class="miniMarks">
+                  <div class="miniMarks">
                       <div class="Gray"></div>
                       <div class="Gray"></div>
                       <div class="Gray"></div>
                       <div class="Gray"></div>
-                    </div>
-                  </div>
-                  <div class="image-container">
-                    <img src="img/blog/Picture4.jpg" alt="PictureBack">
-                  </div>  
+                  </div>    
+                  </div> 
                 </div>
               </div>
             </div>
