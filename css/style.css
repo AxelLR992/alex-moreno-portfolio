@@ -178,7 +178,7 @@ h2 {
 /* Changes Carlos */
 h3 {
   margin-top: 15px;
-  font-size: 75px;
+  font-size: 50px;
   font-weight: 800;
 }
 
@@ -204,7 +204,7 @@ h3 {
 .mark {
   width: 210px;
   height: 50px;
-  background-color: #464DD2;
+  background-color: #464dd2;
   border-radius: 10px;
   margin-bottom: 25px;
 }
@@ -243,7 +243,7 @@ h3 {
     justify-content: center;
   }
   p {
-    font-size: 12px;
+    font-size: 18px;
   }
   .mark {
     width: 100px;
@@ -280,102 +280,6 @@ h5 {
   width: 100%;
 }
 
-/* ----- quote ----- */
-.CardPresentation {
-  color: #fff;
-  background: #232532;
-  padding: 30px 30px 30px 35px;
-  font-weight: 600;
-  font-style: italic;
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #ccc;
-}
-.CardPresentation:before {
-  position: absolute;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f10d";
-  font-size: 16px;
-  opacity: 0.5;
-  color: #414455;
-  top: 40px;
-  left: 23%;
-}
-.CardPresentation .image-container {
-  display: flex;
-  position: relative;
-}
-.CardPresentation .image-container img {
-  width: 175px;
-  height: auto;
-  margin-right: 30px;
-}
-.CardPresentation .Block {
-  flex-grow: 1;
-  position: relative;
-}
-.CardPresentation .Block .text-container {
-  text-align: left;
-  font-size: 20px;
-}
-.CardPresentation .Block .text-container2 {
-  text-align: left;
-  margin-top: 25px;
-  font-size: 14px;
-}
-.CardPresentation .Block .text-container3 {
-  text-align: left;
-  font-size: 11px;
-  color: #414455;
-}
-.CardPresentation .Block div.miniMarks {
-  display: flex;
-  flex-direction: row;
-  text-align: left;
-  margin-top: 25px;
-}
-.CardPresentation .Block div.miniMarks div.Gray {
-  background-color: gray;
-  width: 33px;
-  height: 4px;
-  margin-right: 20px;
-}
-.CardPresentation .Block div.miniMarks div.Gray:nth-child(1) {
-  background-color: yellow;
-}
-
-@media (max-width: 768px) {
-  .CardPresentation {
-    padding: 18px 18px 18px 22px;
-  }
-  .image-container img {
-    width: 150px !important;
-  }
-  .Block .text-container {
-    font-size: 15px !important;
-  }
-  .Block .text-container2 {
-    margin-top: 17px !important;
-    font-size: 9px !important;
-  }
-  .Block .text-container3 {
-    font-size: 6px !important;
-  }
-  .Block div.miniMarks {
-    margin-top: 17px !important;
-  }
-  .Block div.miniMarks div.Gray {
-    width: 22px !important;
-    height: 1.5px !important;
-    margin-right: 12px !important;
-  }
-  .image-container img {
-    margin-right: 13px !important;
-  }
-}
 /* ----- divider ----- */
 .qrt-divider {
   background: rgb(82, 85, 90);
@@ -595,6 +499,34 @@ h5 {
   display: none;
 }
 
+.fullscreen-caption {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fullscreen-caption h3 {
+  text-align: center;
+}
+.fullscreen-caption p {
+  margin-top: 3rem;
+  text-align: justify;
+  max-width: 800px;
+}
+.fullscreen-caption img {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .home-blockquote p {
+    font-size: 30px;
+  }
+  .fullscreen-caption img {
+    width: 75%;
+  }
+}
 /* ------------------------------
 
 frame
@@ -2007,7 +1939,7 @@ content
 }
 .qrt-counter-frame .qrt-counter-box .qrt-counter {
   display: block;
-  font-size: 22px;
+  font-size: 50px;
   font-weight: 800;
   margin-bottom: 10px;
   color: rgb(40, 41, 44);

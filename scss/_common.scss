@@ -4,19 +4,19 @@ common
 
 ------------------------------ */
 /* ----- fonts ----- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* ----- variables ----- */
-$pf: 'Montserrat', sans-serif;
-$sf: 'Montserrat', sans-serif;
-$black-lvl-1: rgba(40,41,44,1);
-$black-lvl-2: rgba(82,85,90,1);
-$black-lvl-3: rgba(182,185,190,1);
-$black-lvl-4: rgba(202,205,210,1);
-$white-lvl-1: rgba(255,255,255,1);
-$white-lvl-2: rgba(247,248,248,1);
-$white-lvl-3: rgba(237,240,245,1);
-$white-lvl-4: rgba(222,225,230,1);
-$shadow: 0 1px 2px 0 rgba(45,45,60,.1);
+$pf: "Montserrat", sans-serif;
+$sf: "Montserrat", sans-serif;
+$black-lvl-1: rgba(40, 41, 44, 1);
+$black-lvl-2: rgba(82, 85, 90, 1);
+$black-lvl-3: rgba(182, 185, 190, 1);
+$black-lvl-4: rgba(202, 205, 210, 1);
+$white-lvl-1: rgba(255, 255, 255, 1);
+$white-lvl-2: rgba(247, 248, 248, 1);
+$white-lvl-3: rgba(237, 240, 245, 1);
+$white-lvl-4: rgba(222, 225, 230, 1);
+$shadow: 0 1px 2px 0 rgba(45, 45, 60, 0.1);
 $tr-sm: 0.2s ease-in-out;
 $tr-md: 0.4s ease-in-out;
 /* ----- text defaults ----- */
@@ -61,7 +61,7 @@ a:hover {
 @media (max-width: 768px) {
   .qrt-sm-text-left {
     text-align: left;
-  } 
+  }
 }
 /* ----- title defaults ----- */
 h1,
@@ -90,7 +90,6 @@ h1 {
   text-shadow: $shadow;
 }
 
-
 @media (max-width: 768px) {
   h1 {
     font-size: 48px;
@@ -111,25 +110,25 @@ h2 {
 
 h3 {
   margin-top: 15px;
-  font-size: 75px;
+  font-size: 50px;
   font-weight: 800;
 }
 
-.imageWhite img{
+.imageWhite img {
   width: 850px;
   margin-bottom: 15px;
 }
 
-.imagePurple img{
+.imagePurple img {
   width: 850px;
   margin-bottom: 15px;
 }
 
-.content1{
+.content1 {
   text-align: center;
 }
 
-.containerElements{
+.containerElements {
   display: grid;
   place-items: center;
 }
@@ -137,42 +136,48 @@ h3 {
 .mark {
   width: 210px;
   height: 50px;
-  background-color: #464DD2;
+  background-color: #464dd2;
   border-radius: 10px;
   margin-bottom: 25px;
 }
 
-.content2{
+.content2 {
   text-align: center;
 }
 
-.containerElements2{
+.containerElements2 {
   display: grid;
   place-items: center;
   background-color: #eeeef6;
 }
 
 @media (max-width: 768px) {
-  .containerElements{
+  .containerElements {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  } .imageWhite img{
+  }
+  .imageWhite img {
     width: 430px;
     margin-bottom: 15px;
-  } .imagePurple img{
+  }
+  .imagePurple img {
     width: 430px;
     margin-bottom: 15px;
-  } h3.qrt-mb-40 {
+  }
+  h3.qrt-mb-40 {
     font-size: 32px;
     margin-top: 15px;
-  } .containerElements2{
+  }
+  .containerElements2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  } p {
-    font-size: 12px;
-  } .mark {
+  }
+  p {
+    font-size: 18px;
+  }
+  .mark {
     width: 100px;
     height: 25px;
     border-radius: 5px;
@@ -207,104 +212,6 @@ h5 {
 
 .qrt-just-img {
   width: 100%;
-}
-/* ----- quote ----- */
-.CardPresentation {
-  color: #fff;
-  background: #232532;
-  padding: 30px 30px 30px 35px;
-  font-weight: 600;
-  font-style: italic;
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #ccc;
-
-  &:before {
-    position: absolute;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f10d";
-    font-size: 16px;
-    opacity: 0.5;
-    color: #414455;
-    top: 40px;
-    left: 23%;
-  }
-
-  .image-container {
-    display: flex;
-    position: relative;
-  }
-  .image-container img {
-    width: 175px;
-    height: auto;
-    margin-right: 30px;
-  }
-  .Block{
-    flex-grow: 1;
-    position: relative;
-  }
-  .Block .text-container {
-    text-align: left;
-    font-size: 20px;
-  }
-  .Block .text-container2{
-    text-align: left;
-    margin-top: 25px;
-    font-size: 14px;
-  }
-  .Block .text-container3{
-    text-align: left;
-    font-size: 11px;
-    color: #414455;
-  }
-  .Block div.miniMarks{
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    margin-top: 25px;
-  }
-  .Block div.miniMarks div.Gray{
-    background-color: gray;
-    width: 33px;
-    height: 4px;
-    margin-right: 20px;
-  }
-  .Block div.miniMarks div.Gray:nth-child(1){
-    background-color: yellow;
-  }
-}
-
-@media (max-width: 768px){
-  .CardPresentation {
-    padding: 18px 18px 18px 22px;
-  }
-  .image-container img {
-    width: 150px !important;
-  }
-  .Block .text-container {
-    font-size: 15px !important;
-  }
-  .Block .text-container2{
-    margin-top: 17px !important;
-    font-size: 9px !important;
-  }
-  .Block .text-container3{
-    font-size: 6px !important;
-  }
-  .Block div.miniMarks{
-    margin-top: 17px !important;
-  }
-  .Block div.miniMarks div.Gray{
-    width: 22px !important;
-    height: 1.5px !important;
-    margin-right: 12px !important;
-  }
-  .image-container img {
-    margin-right: 13px !important;
-  }
 }
 
 /* ----- divider ----- */
@@ -457,7 +364,7 @@ h5 {
     &:after {
       position: absolute;
       font-family: "Font Awesome 5 free";
-      content: '\f061';
+      content: "\f061";
       font-weight: 900;
       display: inline-block;
       font-style: normal;
@@ -496,7 +403,7 @@ h5 {
 
     &.qrt-w-chevron {
       &:after {
-        content: '\f053';
+        content: "\f053";
         left: 0;
         transform: translateX(0);
       }
@@ -557,4 +464,41 @@ h5 {
 
 .qrt-d-none {
   display: none;
+}
+
+.fullscreen-caption {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    margin-top: 3rem;
+    text-align: justify;
+    max-width: 800px;
+  }
+
+  img {
+    width: 100%;
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-blockquote {
+    p {
+      font-size: 30px;
+    }
+  }
+
+  .fullscreen-caption {
+    img {
+      width: 75%;
+    }
+  }
 }

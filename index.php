@@ -46,83 +46,57 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
 
         <div class="qrt-content-frame">
           <div class="qrt-left">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="containerElements">
-                  <div class="content1">
-                    <h3 class="qrt-mb-40">
-                      Meaningful Logos
-                    </h3>
-                    <p>
-                      With a keen attention to detail and big passion for the craft, 
-                      we develop purposeful logotypes. We merge creativity with 
-                      thoughtful storytelling, creating not only symbols, but visual 
-                      ambassadors of their brands, that catch the eyes of customers 
-                      and resonate with audiences, to help you launch 
-                      industry-leading businesses.
-                    </p>
-                  </div> 
-                  <div class="mark"></div>
-                  <div class="imageWhite">
-                    <img src="img/imgIndex/logos-isometric-mockup.png" alt="Image1">
-                  </div> 
-                </div>  
-                <div class="containerElements2">
-                  <div class="content2">
-                    <h3 class="qrt-mb-40">
-                      Branding so Irresistible <br> You’ll be inevitable
-                    </h3>
-                    <p>
-                      We create design materials that embody the essence of your 
-                      brand, shaping a cohesive visual narrative. We specialize in 
-                      distilling the very spirit of your business into a compelling 
-                      and unforgettable visual experience. Elevate your presence, 
-                      captivate your audience, and leave an indelible 
-                      mark in your audience.
-                    </p>
-                  </div>
-                  <div class="mark"></div>
-                  <div class="imagePurple">
-                    <img src="img/imgIndex/brand-book-homepage-mockup.png" alt="Image1">
-                  </div> 
-                </div>
-                <div class="containerElements">
-                  <div class="content1">
-                    <h3 class="qrt-mb-40">
-                      Striking key visuals
-                    </h3>
-                    <p>
-                      As the market becomes more saturated each day, our powerful 
-                      key arts can give your company the upper hand when advertising 
-                      your products and services. We transform your vision into 
-                      captivating images, enhancing your message and leaving a 
-                      lasting impact on your clients.
-                    </p>
-                  </div> 
-                  <div class="mark"></div>
-                  <div class="imageWhite">
-                    <img src="img/imgIndex/key art mockup.png" alt="Image1">
-                  </div> 
-                </div> 
-              </div>
 
-              <div class="col-lg-12">
-                <div class="CardPresentation">
-                <div class="image-container">
-                    <img src="img/blog/Picture4.jpg" alt="PictureBack">
-                  </div> 
-                  <div class="Block">
-                    <div class="text-container"> Design is not what you see,<br> but how you look at the world. </div>
-                    <div class="text-container2"> Alex Moreno</div>
-                    <div class="text-container3"> Graphic Design </div>
-                  <div class="miniMarks">
-                      <div class="Gray"></div>
-                      <div class="Gray"></div>
-                      <div class="Gray"></div>
-                      <div class="Gray"></div>
-                  </div>    
-                  </div> 
+            <div class="fullscreen-caption">
+              <h3><?php echo L::homepageCaptions_first ?></h3>
+
+              <p>
+                <?php echo L::homepageCaptions_firstDescription ?>
+              </p>
+
+              <img src="img/imgIndex/logos-isometric-mockup.png" alt="Meaningful logos">
+            </div>
+            <div class="fullscreen-caption">
+              <h3><?php echo L::homepageCaptions_second ?></h3>
+
+              <p>
+                <?php echo L::homepageCaptions_secondDescription ?>
+              </p>
+
+              <img src="img/imgIndex/brand-book-homepage-mockup.png" alt="Amazing branding">
+            </div>
+            <div class="fullscreen-caption">
+              <h3><?php echo L::homepageCaptions_third ?></h3>
+
+              <p>
+                <?php echo L::homepageCaptions_thirdDescription ?>
+              </p>
+
+              <img src="img/imgIndex/key art mockup.png" alt="Amazing branding">
+            </div>
+
+            <div class="row mt-5">
+              <div class="col-12 text-light p-3 home-blockquote" style="background-color: #222534">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4 text-center">
+                    <img src="img/blog/Picture4.jpg" style="max-width: 250px;" class="w-75" alt="Alex Moreno Picture">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-8 mt-3">
+                    <img src="img/icons/quote.svg" alt="Quote" style="width: 50px" class="mb-2">
+                    <p class="fs-1">
+                      <?php echo L::homepageCaptions_blockquote ?> <br />
+
+                      <small class="mt-4 d-block">
+                        Alex Moreno <br />
+                        <span style="color: #414455"><?php echo L::common_graphicDesigner ?></span>
+                      </small>
+                    </p>
+                    <a href="contact.php" class="qrt-btn qrt-btn-md qrt-btn-color qrt-send-request qrt-anima-link qrt-mr-20">
+                      <span><?php echo L::common_getInTouch ?></span>
+                    </a>
+                  </div>
                 </div>
+
               </div>
             </div>
 
@@ -146,8 +120,7 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
               <div class="col-lg-12">
                 <div class="qrt-call-to-action">
                   <h4>Do you have a project?</h4>
-                  <a class="qrt-btn qrt-btn-sm qrt-btn-color qrt-cursor-scale qrt-anima-link"
-                    href="contact.html"><span>Let's discuss</span></a>
+                  <a class="qrt-btn qrt-btn-sm qrt-btn-color qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Let's discuss</span></a>
                 </div>
               </div>
             </div>

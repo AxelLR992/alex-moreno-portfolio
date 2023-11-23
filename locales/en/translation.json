@@ -28,6 +28,16 @@
     "prices": "Prices",
     "getInTouch": "Get in touch",
     "contactInfo": "Contact Info",
-    "location": "Location"
+    "location": "Location",
+    "graphicDesigner": "Graphic Designer"
+  },
+  "homepageCaptions": {
+    "first": "Meaningful Logos",
+    "firstDescription": "With a keen attention to detail and big passion for the craft, we develop purposeful logotypes. We merge creativity with thoughtful storytelling, creating not only symbols, but visual ambassadors of their brands, that catch the eyes of customers and resonate with audiences, to help you launch industry-leading businesses.",
+    "second": "Branding so Irresistible <br> You'll be inevitable",
+    "secondDescription": "We create design materials that embody the essence of your brand, shaping a cohesive visual narrative. We specialize in distilling the very spirit of your business into a compelling and unforgettable visual experience. Elevate your presence, captivate your audience, and leave an indelible mark in your audience.",
+    "third": "Striking key visuals",
+    "thirdDescription": "As the market becomes more saturated each day, our powerful key arts can give your company the upper hand when advertising your products and services. We transform your vision into captivating images, enhancing your message and leaving a lasting impact on your clients.",
+    "blockquote": "Design is not what you see, but how you look at the world."
   }
 }
