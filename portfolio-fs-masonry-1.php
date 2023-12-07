@@ -6,8 +6,7 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
 $fetch = new Fetch();
 $fetch->set_api_key($_ENV["REST_API_KEY"]);
 $fetch->set_base_url($_ENV["REST_API_URL"]);
-
-$owner = json_decode($fetch->get("/content/item/owner", array("locale" => $locale)));
+$portfolio_content = json_decode($fetch->get("/content/items/portfolio_content", array("locale" => $locale)));
 ?>
 <!doctype html>
 <html lang="<?php echo $locale ?>">
@@ -182,6 +181,22 @@ $owner = json_decode($fetch->get("/content/item/owner", array("locale" => $local
                 </div>
               </div>
             </div>
+
+
+            <?php foreach ($portfolio_content as $item){  
+              ?>
+              <div class="qrt-masonry-grid-item interior architecture">
+                <div class="qrt-work-item"><a data-fancybox="works" href="<?php echo $_ENV["ASSETS_URL"] . $item -> image -> path ?>" class="qrt-cursor-scale qrt-work-cover-frame"><img src="<?php echo $_ENV["ASSETS_URL"] . $item->image->path ?>" alt="#" alt="work cover">
+                    <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
+                    <div class="qrt-work-category"><span><?php echo $item -> category?></span></div>
+                  </a>
+                  <div class="qrt-work-descr">
+                    <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-anima-link"><?php echo $item -> title?></a></h4><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            <?php } ?>
+
             <div class="row">
               <div class="col-lg-12">
                 <div class="qrt-call-to-action">
