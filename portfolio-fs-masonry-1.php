@@ -60,142 +60,63 @@ $portfolio_content = json_decode($fetch->get("/content/items/portfolio_content",
 
             <div class="qrt-masonry-grid qrt-mb-40">
               <div class="qrt-grid-sizer"></div>
-              <div class="qrt-masonry-grid-item qrt-masonry-grid-item-50 architecture">
-                <div class="qrt-work-item"><a data-fancybox="works" href="img/projects/original-size/1.jpg" class="qrt-cursor-scale qrt-work-cover-frame"><img src="img/projects/thumbnails/1.jpg" alt="work cover">
-                    <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                    <div class="qrt-work-category"><span>architecture</span></div>
-                  </a>
-                  <div class="qrt-work-descr">
-                    <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.html" class="qrt-anima-link">Sunset House</a></h4><a href="single-work-1.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+              <?php $reset = 8; for($i = 1; $i<=5; $i++){ foreach ($portfolio_content as $item){
+                
+                $generateContent = rand(1,$reset);
+                if( $generateContent === 2 || $generateContent === 5 || $generateContent === 6 || $generateContent === 3 ){ #bonus for the common container (1x1)
+                  $generateContent = 1;
+                }elseif($generateContent === 7 || $generateContent === 4){ 
+                  $generateContent = 2;
+                }elseif($generateContent === 8){ 
+                  $generateContent = 4;
+                }
+                $saveRandom = $generateContent;
+                $reset -= $saveRandom;
+                $probability;
+                
+                if($reset === 0){
+                  $reset = 8;
+                }
+                $probability = $generateContent;
+                ?>
+                <?php if($probability === 1) {?>
+                <div class="qrt-masonry-grid-item interior architecture">
+                  <div class="qrt-work-item"><a data-fancybox="works" href="<?php echo $_ENV["ASSETS_URL"] . $item -> image -> path ?>" class="qrt-cursor-scale qrt-work-cover-frame"><img src="<?php echo $_ENV["ASSETS_URL"] . $item->image->path ?>" alt="#" alt="work cover">
+                      <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
+                      <div class="qrt-work-category"><span><?php echo $item -> category?></span></div>
+                    </a>
+                    <div class="qrt-work-descr">
+                      <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-anima-link"><?php echo $item -> title?></a></h4><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="qrt-masonry-grid-item interior architecture">
-                <div class="qrt-work-item"><a data-fancybox="works" href="img/projects/original-size/2.jpg" class="qrt-cursor-scale qrt-work-cover-frame"><img src="img/projects/thumbnails/2.jpg" alt="work cover">
-                    <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                    <div class="qrt-work-category"><span>architecture</span><span>interior</span></div>
-                  </a>
-                  <div class="qrt-work-descr">
-                    <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.html" class="qrt-anima-link">MinimalListic interior</a></h4><a href="single-work-1.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                <?php } elseif($probability === 2) {?>
+                  <div class="qrt-masonry-grid-item qrt-masonry-grid-item-h-x-2 repair">
+                  <div class="qrt-work-item"><a data-fancybox="works" href="<?php echo $_ENV["ASSETS_URL"] . $item -> image -> path ?>" class="qrt-cursor-scale qrt-work-cover-frame"><img src="<?php echo $_ENV["ASSETS_URL"] . $item -> image -> path ?>" alt="work cover">
+                      <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
+                      <div class="qrt-work-category"><span><?php echo $item -> category?></span></div>
+                    </a>
+                    <div class="qrt-work-descr">
+                      <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-anima-link"><?php echo $item -> title?></a></h4><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="qrt-masonry-grid-item qrt-masonry-grid-item-h-x-2 repair">
-                <div class="qrt-work-item"><a data-fancybox="works" href="img/projects/original-size/v-1.jpg" class="qrt-cursor-scale qrt-work-cover-frame"><img src="img/projects/thumbnails/v-1.jpg" alt="work cover">
-                    <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                    <div class="qrt-work-category"><span>repair</span></div>
-                  </a>
-                  <div class="qrt-work-descr">
-                    <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.html" class="qrt-anima-link">Rem house</a></h4><a href="single-work-1.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                  <?php } elseif($probability === 4) {?>
+                    <div class="qrt-masonry-grid-item qrt-masonry-grid-item-50 architecture">
+                  <div class="qrt-work-item"><a data-fancybox="works" href="<?php echo $_ENV["ASSETS_URL"] . $item -> image -> path ?>" class="qrt-cursor-scale qrt-work-cover-frame"><img src="<?php echo $_ENV["ASSETS_URL"] . $item -> image -> path ?>" alt="work cover">
+                      <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
+                      <div class="qrt-work-category"><span><?php echo $item -> category?></span></div>
+                    </a>
+                    <div class="qrt-work-descr">
+                      <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-anima-link"><?php echo $item -> title?></a></h4><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="qrt-masonry-grid-item architecture interior">
-                <div class="qrt-work-item"><a data-fancybox="works" href="img/projects/original-size/4.jpg" class="qrt-cursor-scale qrt-work-cover-frame"><img src="img/projects/thumbnails/4.jpg" alt="work cover">
-                    <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                    <div class="qrt-work-category"><span>architecture</span><span>interior</span></div>
-                  </a>
-                  <div class="qrt-work-descr">
-                    <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.html" class="qrt-anima-link">OP House</a></h4><a href="single-work-1.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="qrt-masonry-grid-item interior">
-                <div class="qrt-work-item"><a data-fancybox="works" href="img/projects/original-size/5.jpg" class="qrt-cursor-scale qrt-work-cover-frame"><img src="img/projects/thumbnails/5.jpg" alt="work cover">
-                    <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                    <div class="qrt-work-category"><span>interior</span></div>
-                  </a>
-                  <div class="qrt-work-descr">
-                    <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.html" class="qrt-anima-link">Modern Reception</a></h4><a href="single-work-1.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="qrt-masonry-grid-item repair architecture">
-                <div class="qrt-work-item"><a data-fancybox="works" href="img/projects/original-size/6.jpg" class="qrt-cursor-scale qrt-work-cover-frame"><img src="img/projects/thumbnails/6.jpg" alt="work cover">
-                    <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                    <div class="qrt-work-category"><span>architecture</span><span>repair</span></div>
-                  </a>
-                  <div class="qrt-work-descr">
-                    <h4 class="qrt-cursor-color qrt-white"><a href="#.">Villa La Siesta</a></h4><a href="single-work-1.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="qrt-masonry-grid-item architecture repair">
-                <div class="qrt-work-item"><a data-fancybox="works" href="img/projects/original-size/7.jpg" class="qrt-cursor-scale qrt-work-cover-frame"><img src="img/projects/thumbnails/7.jpg" alt="work cover">
-                    <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                    <div class="qrt-work-category"><span>architecture</span><span>repair</span></div>
-                  </a>
-                  <div class="qrt-work-descr">
-                    <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.html" class="qrt-anima-link">Terrace garden</a></h4><a href="single-work-1.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="qrt-masonry-grid-item interior">
-                <div class="qrt-work-item"><a data-fancybox="works" href="img/projects/original-size/8.jpg" class="qrt-cursor-scale qrt-work-cover-frame"><img src="img/projects/thumbnails/8.jpg" alt="work cover">
-                    <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                    <div class="qrt-work-category"><span>interior</span></div>
-                  </a>
-                  <div class="qrt-work-descr">
-                    <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.html" class="qrt-anima-link">TZ hotel</a></h4><a href="single-work-1.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="qrt-masonry-grid-item qrt-masonry-grid-item-h-x-2 repair architecture">
-                <div class="qrt-work-item"><a data-fancybox="works" href="img/projects/original-size/v-1.jpg" class="qrt-cursor-scale qrt-work-cover-frame"><img src="img/projects/thumbnails/v-2.jpg" alt="work cover">
-                    <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                    <div class="qrt-work-category"><span>architecture</span><span>repair</span></div>
-                  </a>
-                  <div class="qrt-work-descr">
-                    <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.html" class="qrt-anima-link">Apartment Building</a></h4><a href="single-work-1.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="qrt-masonry-grid-item architecture">
-                <div class="qrt-work-item"><a data-fancybox="works" href="img/projects/original-size/10.jpg" class="qrt-cursor-scale qrt-work-cover-frame"><img src="img/projects/thumbnails/10.jpg" alt="work cover">
-                    <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                    <div class="qrt-work-category"><span>architecture</span></div>
-                  </a>
-                  <div class="qrt-work-descr">
-                    <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.html" class="qrt-anima-link">Weelywally</a></h4><a href="single-work-1.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="qrt-masonry-grid-item qrt-masonry-grid-item-50 interior repair">
-                <div class="qrt-work-item"><a data-fancybox="works" href="img/projects/original-size/11.jpg" class="qrt-cursor-scale qrt-work-cover-frame"><img src="img/projects/thumbnails/11.jpg" alt="work cover">
-                    <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                    <div class="qrt-work-category"><span>interior</span><span>repair</span></div>
-                  </a>
-                  <div class="qrt-work-descr">
-                    <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.html" class="qrt-anima-link">Modern country house</a></h4><a href="single-work-1.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="qrt-masonry-grid-item repair interior">
-                <div class="qrt-work-item"><a data-fancybox="works" href="img/projects/original-size/12.jpg" class="qrt-cursor-scale qrt-work-cover-frame"><img src="img/projects/thumbnails/4.jpg" alt="work cover">
-                    <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                    <div class="qrt-work-category"><span>interior</span><span>repair</span></div>
-                  </a>
-                  <div class="qrt-work-descr">
-                    <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.html" class="qrt-anima-link">Waterline</a></h4><a href="single-work-1.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
+                <?php } ?>
+              <?php }} ?>
             </div>
 
 
-            <?php foreach ($portfolio_content as $item){  
-              ?>
-              <div class="qrt-masonry-grid-item interior architecture">
-                <div class="qrt-work-item"><a data-fancybox="works" href="<?php echo $_ENV["ASSETS_URL"] . $item -> image -> path ?>" class="qrt-cursor-scale qrt-work-cover-frame"><img src="<?php echo $_ENV["ASSETS_URL"] . $item->image->path ?>" alt="#" alt="work cover">
-                    <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                    <div class="qrt-work-category"><span><?php echo $item -> category?></span></div>
-                  </a>
-                  <div class="qrt-work-descr">
-                    <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-anima-link"><?php echo $item -> title?></a></h4><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            <?php } ?>
 
             <div class="row">
               <div class="col-lg-12">
