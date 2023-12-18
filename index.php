@@ -25,6 +25,8 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
   <link href="css/plugins/mapbox-style.css" rel="stylesheet" />
   <!-- main css -->
   <link rel="stylesheet" href="css/style.css" />
+  <!-- animate style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
   <title>Alex Moreno - Graphic Designer</title>
 </head>
@@ -48,31 +50,31 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
           <div class="qrt-left">
 
             <div class="fullscreen-caption">
-              <h3><?php echo L::homepageCaptions_first ?></h3>
+              <h3 class="animate__animated animate__fadeIn animate__delay-3s"><?php echo L::homepageCaptions_first ?></h3>
 
-              <p>
+              <p class="animate__animated animate__fadeIn animate__delay-3s">
                 <?php echo L::homepageCaptions_firstDescription ?>
               </p>
 
-              <img src="img/imgIndex/logos-isometric-mockup.png" alt="Meaningful logos">
+              <img class="animate__animated animate__fadeIn animate__delay-3s" src="img/imgIndex/logos-isometric-mockup.png" alt="Meaningful logos">
             </div>
             <div class="fullscreen-caption">
-              <h3><?php echo L::homepageCaptions_second ?></h3>
+              <h3 class="animate__animated animate__fadeIn animate__delay-4s"><?php echo L::homepageCaptions_second ?></h3>
 
-              <p>
+              <p class="animate__animated animate__fadeIn animate__delay-4s">
                 <?php echo L::homepageCaptions_secondDescription ?>
               </p>
 
-              <img src="img/imgIndex/brand-book-homepage-mockup.png" alt="Amazing branding">
+              <img class="animate__animated animate__fadeIn animate__delay-4s" src="img/imgIndex/brand-book-homepage-mockup.png" alt="Amazing branding">
             </div>
             <div class="fullscreen-caption">
-              <h3><?php echo L::homepageCaptions_third ?></h3>
+              <h3 class="animate__animated animate__fadeIn animate__delay-5s"><?php echo L::homepageCaptions_third ?></h3>
 
-              <p>
+              <p class="animate__animated animate__fadeIn animate__delay-5s">
                 <?php echo L::homepageCaptions_thirdDescription ?>
               </p>
 
-              <img src="img/imgIndex/key art mockup.png" alt="Amazing branding">
+              <img class="animate__animated animate__fadeIn animate__delay-5s" src="img/imgIndex/key art mockup.png" alt="Amazing branding">
             </div>
 
             <div class="row mt-5">

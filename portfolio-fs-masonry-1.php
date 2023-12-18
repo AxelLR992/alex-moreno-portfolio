@@ -60,7 +60,7 @@ $portfolio_content = json_decode($fetch->get("/content/items/portfolio_content",
 
             <div class="qrt-masonry-grid qrt-mb-40">
               <div class="qrt-grid-sizer"></div>
-              <?php $reset = 8; for($i = 1; $i<=5; $i++){ foreach ($portfolio_content as $item){
+              <?php $reset = 8; for($i = 1; $i<=37; $i++){ foreach ($portfolio_content as $item){
                 
                 $generateContent = rand(1,$reset);
                 if( $generateContent === 2 || $generateContent === 5 || $generateContent === 6 || $generateContent === 3 ){ #bonus for the common container (1x1)
