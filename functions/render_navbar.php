@@ -24,7 +24,7 @@ function render_navbar(string $active_element, i18n $i18n)
                                 <a class="qrt-mobile-fix" href="about-me.php">' . L::nav_about . '</a>
                             </li>
                             <li ' . ($active_element == "portfolio" ? 'class="current-menu-item"' : "") . '>
-                                <a class="qrt-mobile-fix" href="portfolio-fs-masonry-1.php">' . L::nav_portfolio . '</a>
+                                <a class="qrt-mobile-fix" href="portfolio.php">' . L::nav_portfolio . '</a>
                             </li>
                             <li ' . ($active_element == "contact" ? 'class="current-menu-item"' : "") . '>
                                 <a class="qrt-mobile-fix" href="contact.php">' . L::nav_contact . '</a>

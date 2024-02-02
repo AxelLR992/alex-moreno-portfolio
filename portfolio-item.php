@@ -10,7 +10,7 @@ $fetch->set_base_url($_ENV["REST_API_URL"]);
 $owner = json_decode($fetch->get("/content/item/owner", array("locale" => $locale)));
 $id = htmlspecialchars($_GET["id"]);
 $portfolio_content = json_decode($fetch->get("/content/items/portfolio_content", array("locale" => $locale)));
-$item = json_decode($fetch->get("/content/item/portfolio_content/".$id, array("locale" => $locale)));
+$item = json_decode($fetch->get("/content/item/portfolio_content/" . $id, array("locale" => $locale)));
 ?>
 <!doctype html>
 <html lang="<?php echo $locale ?>">
@@ -42,7 +42,7 @@ $item = json_decode($fetch->get("/content/item/portfolio_content/".$id, array("l
 <body>
 
   <div class="qrt-app">
-  <?php include "includes/preloader.php"; ?>
+    <?php include "includes/preloader.php"; ?>
     <div id="cursor" class="qrt-cursor">
       <div></div>
       <div class="qrt-follower"><i class="fas fa-circle-notch"></i></div>
@@ -58,20 +58,20 @@ $item = json_decode($fetch->get("/content/item/portfolio_content/".$id, array("l
             <div class="row">
               <div class="col-lg-12">
 
-                <h2 class="qrt-mb-40"><?php echo $item -> title ?></h2>
+                <h2 class="qrt-mb-40"><?php echo $item->title ?></h2>
 
                 <div class="qrt-page-cover qrt-cover-center">
-                  <img src="<?php echo $_ENV["ASSETS_URL"] . $item -> image -> path ?>" alt="sunset house">
+                  <img src="<?php echo $_ENV["ASSETS_URL"] . $item->image->path ?>" alt="sunset house">
                   <div class="qrt-about-info qrt-right-position">
                     <div class="qrt-cover-info">
                       <ul class="qrt-table">
                         <li>
-                          <h5 class="qrt-white">Date:</h5><span><?php 
-                          $date = $item -> date; 
-                          echo date('F j, Y', strtotime($date)) ?></span>
+                          <h5 class="qrt-white">Date:</h5><span><?php
+                                                                $date = $item->date;
+                                                                echo date('F j, Y', strtotime($date)) ?></span>
                         </li>
                         <li>
-                          <h5 class="qrt-white">Client:</h5><span><?php echo $item -> client ?></span>
+                          <h5 class="qrt-white">Client:</h5><span><?php echo $item->client ?></span>
                         </li>
                       </ul>
                     </div>
@@ -79,65 +79,72 @@ $item = json_decode($fetch->get("/content/item/portfolio_content/".$id, array("l
                 </div>
 
                 <div class="qrt-just-text">
-                  <?php echo $item -> content ?>
+                  <?php
+                  // Replace the image with the full path
+                  $item->content = str_replace("src=\"", "src=\"" . $_ENV["CMS_URL"], $item->content);
+                  // Add style to the images
+                  $item->content = str_replace("<img", "<img style=\"max-width: 100%; height: auto;\"", $item->content);
+
+                  echo $item->content
+                  ?>
                 </div>
 
                 <div class="qrt-divider qrt-space-fix"></div>
 
                 <h3 class="qrt-mb-40">Latest
-                <?php echo explode(" ", $owner->fullname)[0] ?>'s works
+                  <?php echo explode(" ", $owner->fullname)[0] ?>'s works
                 </h3>
-                <?php include("includes/works-slider.php")?>
+                <?php include("includes/works-slider.php") ?>
 
                 <div class="qrt-divider"></div>
 
-            <div class="row">
-              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-12">
 
-                <?php include("includes/clients-slider.php")?>
+                    <?php include("includes/clients-slider.php") ?>
 
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="qrt-call-to-action">
-                  <h4>Do you have a project?</h4><a class="qrt-btn qrt-btn-sm qrt-btn-color qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Let's discuss</span></a>
+                  </div>
                 </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="qrt-call-to-action">
+                      <h4>Do you have a project?</h4><a class="qrt-btn qrt-btn-sm qrt-btn-color qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Let's discuss</span></a>
+                    </div>
+                  </div>
+                </div>
+
               </div>
+
+              <?php echo render_fixed_rightbar($owner->fullname, "This is a test", "Get in touch", "/contact.php") ?>
             </div>
-            
           </div>
-          
-          <?php echo render_fixed_rightbar($owner->fullname, "This is a test", "Get in touch", "/contact.php")?>
         </div>
       </div>
-    </div>
-  </div>
 
 
-  <!-- jquery js -->
-  <script src="js/plugins/jquery.min.js"></script>
-  <!-- anime js -->
-  <script src="js/plugins/anime.min.js"></script>
-  <!-- swiper js -->
-  <script src="js/plugins/swiper.min.js"></script>
-  <!-- progressbar js -->
-  <script src="js/plugins/progressbar.min.js"></script>
-  <!-- smooth scrollbar js -->
-  <script src="js/plugins/smooth-scrollbar.min.js"></script>
-  <!-- overscroll js -->
-  <script src="js/plugins/overscroll.min.js"></script>
-  <!-- isotope js -->
-  <script src="js/plugins/isotope.min.js"></script>
-  <!-- fancybox js -->
-  <script src="js/plugins/fancybox.min.js"></script>
-  <!-- swup js -->
-  <script src="js/plugins/swup.min.js"></script>
-  <!-- mapbox js -->
-  <script src="js/plugins/mapbox.min.js"></script>
+      <!-- jquery js -->
+      <script src="js/plugins/jquery.min.js"></script>
+      <!-- anime js -->
+      <script src="js/plugins/anime.min.js"></script>
+      <!-- swiper js -->
+      <script src="js/plugins/swiper.min.js"></script>
+      <!-- progressbar js -->
+      <script src="js/plugins/progressbar.min.js"></script>
+      <!-- smooth scrollbar js -->
+      <script src="js/plugins/smooth-scrollbar.min.js"></script>
+      <!-- overscroll js -->
+      <script src="js/plugins/overscroll.min.js"></script>
+      <!-- isotope js -->
+      <script src="js/plugins/isotope.min.js"></script>
+      <!-- fancybox js -->
+      <script src="js/plugins/fancybox.min.js"></script>
+      <!-- swup js -->
+      <script src="js/plugins/swup.min.js"></script>
+      <!-- mapbox js -->
+      <script src="js/plugins/mapbox.min.js"></script>
 
-  <!-- main js -->
-  <script src="js/main.js"></script>
+      <!-- main js -->
+      <script src="js/main.js"></script>
 
 </body>
 

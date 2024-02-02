@@ -38,7 +38,7 @@ $portfolio_content = json_decode($fetch->get("/content/items/portfolio_content",
 <body>
 
   <div class="qrt-app">
-  <?php include "includes/preloader.php"; ?>
+    <?php include "includes/preloader.php"; ?>
     <div id="cursor" class="qrt-cursor">
       <div></div>
       <div class="qrt-follower"><i class="fas fa-circle-notch"></i></div>
@@ -60,60 +60,62 @@ $portfolio_content = json_decode($fetch->get("/content/items/portfolio_content",
 
             <div class="qrt-masonry-grid qrt-mb-40">
               <div class="qrt-grid-sizer"></div>
-              <?php $reset = 8; for($i = 1; $i<=37; $i++){ foreach ($portfolio_content as $item){
-                
-                $generateContent = rand(1,$reset);
-                if( $generateContent === 2 || $generateContent === 5 || $generateContent === 6 || $generateContent === 3 ){ #bonus for the common container (1x1)
+              <?php
+              $reset = 8;
+              foreach ($portfolio_content as $item) {
+
+                $generateContent = rand(1, $reset);
+                if ($generateContent === 2 || $generateContent === 5 || $generateContent === 6 || $generateContent === 3) { #bonus for the common container (1x1)
                   $generateContent = 1;
-                }elseif($generateContent === 7 || $generateContent === 4){ 
+                } elseif ($generateContent === 7 || $generateContent === 4) {
                   $generateContent = 2;
-                }elseif($generateContent === 8){ 
+                } elseif ($generateContent === 8) {
                   $generateContent = 4;
                 }
                 $saveRandom = $generateContent;
                 $reset -= $saveRandom;
                 $probability;
-                
-                if($reset === 0){
+
+                if ($reset === 0) {
                   $reset = 8;
                 }
                 $probability = $generateContent;
-                ?>
-                <?php if($probability === 1) {?>
-                <div class="qrt-masonry-grid-item <?php echo $item -> filter?>">
-                  <div class="qrt-work-item"><a data-fancybox="works" href="<?php echo $_ENV["ASSETS_URL"] . $item -> image -> path ?>" class="qrt-cursor-scale qrt-work-cover-frame"><img src="<?php echo $_ENV["ASSETS_URL"] . $item->image->path ?>" alt="#" alt="work cover">
-                      <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                      <div class="qrt-work-category"><span><?php echo $item -> filter?></span></div>
-                    </a>
-                    <div class="qrt-work-descr">
-                      <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-anima-link"><?php echo $item -> title?></a></h4><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+              ?>
+                <?php if ($probability === 1) { ?>
+                  <div class="qrt-masonry-grid-item <?php echo $item->filter ?>">
+                    <div class="qrt-work-item"><a data-fancybox="works" href="<?php echo $_ENV["ASSETS_URL"] . $item->image->path ?>" class="qrt-cursor-scale qrt-work-cover-frame"><img src="<?php echo $_ENV["ASSETS_URL"] . $item->image->path ?>" alt="#" alt="work cover">
+                        <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
+                        <div class="qrt-work-category"><span><?php echo $item->filter ?></span></div>
+                      </a>
+                      <div class="qrt-work-descr">
+                        <h4 class="qrt-cursor-color qrt-white"><a href="portfolio-item.php?id=<?php echo $item->_id ?>" class="qrt-anima-link"><?php echo $item->title ?></a></h4><a href="portfolio-item.php?id=<?php echo $item->_id ?>" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <?php } elseif($probability === 2) {?>
-                  <div class="qrt-masonry-grid-item qrt-masonry-grid-item-h-x-2 <?php echo $item -> filter?>">
-                  <div class="qrt-work-item"><a data-fancybox="works" href="<?php echo $_ENV["ASSETS_URL"] . $item -> image -> path ?>" class="qrt-cursor-scale qrt-work-cover-frame"><img src="<?php echo $_ENV["ASSETS_URL"] . $item -> image -> path ?>" alt="work cover">
-                      <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                      <div class="qrt-work-category"><span><?php echo $item -> filter?></span></div>
-                    </a>
-                    <div class="qrt-work-descr">
-                      <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-anima-link"><?php echo $item -> title?></a></h4><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                <?php } elseif ($probability === 2) { ?>
+                  <div class="qrt-masonry-grid-item qrt-masonry-grid-item-h-x-2 <?php echo $item->filter ?>">
+                    <div class="qrt-work-item"><a data-fancybox="works" href="<?php echo $_ENV["ASSETS_URL"] . $item->image->path ?>" class="qrt-cursor-scale qrt-work-cover-frame"><img src="<?php echo $_ENV["ASSETS_URL"] . $item->image->path ?>" alt="work cover">
+                        <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
+                        <div class="qrt-work-category"><span><?php echo $item->filter ?></span></div>
+                      </a>
+                      <div class="qrt-work-descr">
+                        <h4 class="qrt-cursor-color qrt-white"><a href="portfolio-item.php?id=<?php echo $item->_id ?>" class="qrt-anima-link"><?php echo $item->title ?></a></h4><a href="portfolio-item.php?id=<?php echo $item->_id ?>" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                  <?php } elseif($probability === 4) {?>
-                    <div class="qrt-masonry-grid-item qrt-masonry-grid-item-50 <?php echo $item -> filter?>">
-                  <div class="qrt-work-item"><a data-fancybox="works" href="<?php echo $_ENV["ASSETS_URL"] . $item -> image -> path ?>" class="qrt-cursor-scale qrt-work-cover-frame"><img src="<?php echo $_ENV["ASSETS_URL"] . $item -> image -> path ?>" alt="work cover">
-                      <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                      <div class="qrt-work-category"><span><?php echo $item -> filter?></span></div>
-                    </a>
-                    <div class="qrt-work-descr">
-                      <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-anima-link"><?php echo $item -> title?></a></h4><a href="single-work-1.php?id=<?php echo $item -> _id ?>" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                <?php } elseif ($probability === 4) { ?>
+                  <div class="qrt-masonry-grid-item qrt-masonry-grid-item-50 <?php echo $item->filter ?>">
+                    <div class="qrt-work-item"><a data-fancybox="works" href="<?php echo $_ENV["ASSETS_URL"] . $item->image->path ?>" class="qrt-cursor-scale qrt-work-cover-frame"><img src="<?php echo $_ENV["ASSETS_URL"] . $item->image->path ?>" alt="work cover">
+                        <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
+                        <div class="qrt-work-category"><span><?php echo $item->filter ?></span></div>
+                      </a>
+                      <div class="qrt-work-descr">
+                        <h4 class="qrt-cursor-color qrt-white"><a href="portfolio-item.php?id=<?php echo $item->_id ?>" class="qrt-anima-link"><?php echo $item->title ?></a></h4><a href="portfolio-item.php?id=<?php echo $item->_id ?>" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                      </div>
                     </div>
                   </div>
-                </div>
                 <?php } ?>
-              <?php }} ?>
+              <?php } ?>
             </div>
 
 
