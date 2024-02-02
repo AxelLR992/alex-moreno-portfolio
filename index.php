@@ -49,7 +49,7 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
         <div class="qrt-content-frame">
           <div class="qrt-left">
 
-            <video style="width: 100%; max-height: 100vh;" autoplay muted loop>
+            <video style="width: 100%; max-height: 100vh;" autoplay muted loop controls>
               <source type="video/mp4" src="https://cms.alexmorenoac.com/storage/uploads/2023/11/08/Website-Hero-1-with-music-comp_uid_654ad17d35c13.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
