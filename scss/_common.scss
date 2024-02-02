@@ -4,19 +4,19 @@ common
 
 ------------------------------ */
 /* ----- fonts ----- */
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* ----- variables ----- */
-$pf: 'Commissioner', sans-serif;
-$sf: 'Josefin Sans', sans-serif;
-$black-lvl-1: rgba(40,41,44,1);
-$black-lvl-2: rgba(82,85,90,1);
-$black-lvl-3: rgba(182,185,190,1);
-$black-lvl-4: rgba(202,205,210,1);
-$white-lvl-1: rgba(255,255,255,1);
-$white-lvl-2: rgba(247,248,248,1);
-$white-lvl-3: rgba(237,240,245,1);
-$white-lvl-4: rgba(222,225,230,1);
-$shadow: 0 1px 2px 0 rgba(45,45,60,.1);
+$pf: "Montserrat", sans-serif;
+$sf: "Montserrat", sans-serif;
+$black-lvl-1: rgba(40, 41, 44, 1);
+$black-lvl-2: rgba(82, 85, 90, 1);
+$black-lvl-3: rgba(182, 185, 190, 1);
+$black-lvl-4: rgba(202, 205, 210, 1);
+$white-lvl-1: rgba(255, 255, 255, 1);
+$white-lvl-2: rgba(247, 248, 248, 1);
+$white-lvl-3: rgba(237, 240, 245, 1);
+$white-lvl-4: rgba(222, 225, 230, 1);
+$shadow: 0 1px 2px 0 rgba(45, 45, 60, 0.1);
 $tr-sm: 0.2s ease-in-out;
 $tr-md: 0.4s ease-in-out;
 /* ----- text defaults ----- */
@@ -30,7 +30,7 @@ $tr-md: 0.4s ease-in-out;
 body {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 1.125rem;
   font-family: $sf;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -89,6 +89,7 @@ h1 {
   font-weight: 800;
   text-shadow: $shadow;
 }
+
 @media (max-width: 768px) {
   h1 {
     font-size: 48px;
@@ -105,10 +106,85 @@ h2 {
   font-weight: 800;
 }
 
+/* Changes Carlos */
+
 h3 {
-  font-size: 20px;
+  margin-top: 15px;
+  font-size: 50px;
   font-weight: 800;
 }
+
+.imageWhite img {
+  width: 850px;
+  margin-bottom: 15px;
+}
+
+.imagePurple img {
+  width: 850px;
+  margin-bottom: 15px;
+}
+
+.content1 {
+  text-align: center;
+}
+
+.containerElements {
+  display: grid;
+  place-items: center;
+}
+
+.mark {
+  width: 210px;
+  height: 50px;
+  background-color: #464dd2;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.content2 {
+  text-align: center;
+}
+
+.containerElements2 {
+  display: grid;
+  place-items: center;
+  background-color: #eeeef6;
+}
+
+@media (max-width: 768px) {
+  .containerElements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .imageWhite img {
+    width: 430px;
+    margin-bottom: 15px;
+  }
+  .imagePurple img {
+    width: 430px;
+    margin-bottom: 15px;
+  }
+  h3.qrt-mb-40 {
+    font-size: 32px;
+    margin-top: 15px;
+  }
+  .containerElements2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  p {
+    font-size: 18px;
+  }
+  .mark {
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+  }
+}
+
+/* End changes*/
 
 h4 {
   font-size: 16px;
@@ -137,41 +213,7 @@ h5 {
 .qrt-just-img {
   width: 100%;
 }
-/* ----- quote ----- */
-blockquote {
-  color: rgba(29, 233, 182, 1);
-  font-size: 1rem;
-  background: $accent;
-  padding: 30px 30px 30px 35px;
-  font-weight: 600;
-  font-style: italic;
-  position: relative;
 
-  &:before {
-    position: absolute;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f10d";
-    font-size: 16px;
-    opacity: 0.5;
-    color: rgba(29, 233, 182, 1);
-    top: 13px;
-    left: 13px;
-  }
-
-  &:after {
-    position: absolute;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f10d";
-    font-size: 16px;
-    opacity: 0.5;
-    color: #fff;
-    bottom: 13px;
-    right: 13px;
-    transform: rotate(180deg);
-  }
-}
 /* ----- divider ----- */
 .qrt-divider {
   background: $black-lvl-2;
@@ -322,7 +364,7 @@ blockquote {
     &:after {
       position: absolute;
       font-family: "Font Awesome 5 free";
-      content: '\f061';
+      content: "\f061";
       font-weight: 900;
       display: inline-block;
       font-style: normal;
@@ -361,7 +403,7 @@ blockquote {
 
     &.qrt-w-chevron {
       &:after {
-        content: '\f053';
+        content: "\f053";
         left: 0;
         transform: translateX(0);
       }
@@ -384,7 +426,7 @@ blockquote {
 }
 
 .qrt-mb-40 {
-  margin-bottom: 40px !important;
+  margin-bottom: 15px !important;
 }
 
 .qrt-mb-30 {
@@ -422,4 +464,41 @@ blockquote {
 
 .qrt-d-none {
   display: none;
+}
+
+.fullscreen-caption {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    margin-top: 3rem;
+    text-align: justify;
+    max-width: 800px;
+  }
+
+  img {
+    width: 100%;
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-blockquote {
+    p {
+      font-size: 30px;
+    }
+  }
+
+  .fullscreen-caption {
+    img {
+      width: 75%;
+    }
+  }
 }

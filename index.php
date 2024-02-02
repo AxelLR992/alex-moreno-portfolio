@@ -25,6 +25,8 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
   <link href="css/plugins/mapbox-style.css" rel="stylesheet" />
   <!-- main css -->
   <link rel="stylesheet" href="css/style.css" />
+  <!-- animate style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
   <title>Alex Moreno - Graphic Designer</title>
 </head>
@@ -46,39 +48,57 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
 
         <div class="qrt-content-frame">
           <div class="qrt-left">
-            <div class="row">
-              <div class="col-lg-4">
-                <h3 class="qrt-mb-40">
-                  We are creative <br />building - design company
-                </h3>
-              </div>
-              <div class="col-lg-8 qrt-mb-25">
-                <p>
-                  We have intentionally never developed a stylistic formula
-                  for our work, which is why our projects never quite look or
-                  feel the same. Each of our spaces is the result of our
-                  ability to listen, which has turned our designs and
-                  buildings into personal reflections of our clients’
-                  personalities and values, which we co-construct through
-                  research, workshops and surveys.
-                </p>
 
-                <p>
-                  In our studio, every project is an open ended enquiry,
-                  helping people to challenge their existing state and work
-                  towards an alternative, desired one. We provide guidance,
-                  expertise and experience across all phases in the
-                  architectural process, ranging from thinking, to designing,
-                  building, and ultimately finding the right way to
-                  communicate the results.
-                </p>
-              </div>
-              <div class="col-lg-12">
-                <blockquote>
-                  Change is an opportunity! We want to lead people towards
-                  durable solutions and designs that enhance feelings of
-                  closeness, wellbeing and hopefully, happiness.
-                </blockquote>
+            <div class="fullscreen-caption">
+              <h3 class="animate__animated animate__fadeIn animate__delay-3s"><?php echo L::homepageCaptions_first ?></h3>
+
+              <p class="animate__animated animate__fadeIn animate__delay-3s">
+                <?php echo L::homepageCaptions_firstDescription ?>
+              </p>
+
+              <img class="animate__animated animate__fadeIn animate__delay-3s" src="img/imgIndex/logos-isometric-mockup.png" alt="Meaningful logos">
+            </div>
+            <div class="fullscreen-caption">
+              <h3 class="animate__animated animate__fadeIn animate__delay-4s"><?php echo L::homepageCaptions_second ?></h3>
+
+              <p class="animate__animated animate__fadeIn animate__delay-4s">
+                <?php echo L::homepageCaptions_secondDescription ?>
+              </p>
+
+              <img class="animate__animated animate__fadeIn animate__delay-4s" src="img/imgIndex/brand-book-homepage-mockup.png" alt="Amazing branding">
+            </div>
+            <div class="fullscreen-caption">
+              <h3 class="animate__animated animate__fadeIn animate__delay-5s"><?php echo L::homepageCaptions_third ?></h3>
+
+              <p class="animate__animated animate__fadeIn animate__delay-5s">
+                <?php echo L::homepageCaptions_thirdDescription ?>
+              </p>
+
+              <img class="animate__animated animate__fadeIn animate__delay-5s" src="img/imgIndex/key art mockup.png" alt="Amazing branding">
+            </div>
+
+            <div class="row mt-5">
+              <div class="col-12 text-light p-3 home-blockquote" style="background-color: #222534">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4 text-center">
+                    <img src="img/blog/Picture4.jpg" style="max-width: 250px;" class="w-75" alt="Alex Moreno Picture">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-8 mt-3">
+                    <img src="img/icons/quote.svg" alt="Quote" style="width: 50px" class="mb-2">
+                    <p class="fs-1">
+                      <?php echo L::homepageCaptions_blockquote ?> <br />
+
+                      <small class="mt-4 d-block">
+                        Alex Moreno <br />
+                        <span style="color: #414455"><?php echo L::common_graphicDesigner ?></span>
+                      </small>
+                    </p>
+                    <a href="contact.php" class="qrt-btn qrt-btn-md qrt-btn-color qrt-send-request qrt-anima-link qrt-mr-20">
+                      <span><?php echo L::common_getInTouch ?></span>
+                    </a>
+                  </div>
+                </div>
+
               </div>
             </div>
 
@@ -102,8 +122,7 @@ $locale = isset($_SESSION['lang']) ? strtolower($_SESSION['lang']) : $i18n->getF
               <div class="col-lg-12">
                 <div class="qrt-call-to-action">
                   <h4>Do you have a project?</h4>
-                  <a class="qrt-btn qrt-btn-sm qrt-btn-color qrt-cursor-scale qrt-anima-link"
-                    href="contact.html"><span>Let's discuss</span></a>
+                  <a class="qrt-btn qrt-btn-sm qrt-btn-color qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Let's discuss</span></a>
                 </div>
               </div>
             </div>

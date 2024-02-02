@@ -147,8 +147,10 @@ $owner = json_decode($fetch->get("/content/item/owner", array("locale" => $local
               <div class="col-lg-12">
 
                 <blockquote>
-                  Change is an opportunity! We want to lead people towards durable solutions and designs that enhance
-                  feelings of closeness, wellbeing and hopefully, happiness.
+                  Design is not what you see, but how you look at the world.
+                  <div class="image-container">
+                    <img src="img/blog/Picture4.jpg" alt="PictureBack">
+                  </div>  
                 </blockquote>
 
               </div>
@@ -164,85 +166,11 @@ $owner = json_decode($fetch->get("/content/item/owner", array("locale" => $local
 
             <div class="qrt-divider qrt-space-fix"></div>
 
-            <div class="row">
-              <div class="col-lg-12">
+            <h3 class="qrt-mb-40">Latest
+            <?php echo explode(" ", $owner->fullname)[0] ?>'s works
+            </h3>
 
-                <h3 class="qrt-mb-40">Latest
-                  <?php echo explode(" ", $owner->fullname)[0] ?>'s works
-                </h3>
-
-              </div>
-              <div class="col-lg-12">
-
-                <div class="swiper-container qrt-latest-works-slider qrt-mb-20" style="overflow: visible">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-
-                      <div class="qrt-work-item qrt-work-open">
-                        <a data-fancybox="works" href="img/projects/original-size/5.jpg"
-                          class="qrt-cursor-scale qrt-work-cover-frame">
-                          <img src="img/projects/thumbnails/5.jpg" alt="work cover">
-                          <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                        </a>
-                        <div class="qrt-work-descr">
-                          <h4 class="qrt-cursor-color qrt-white"><a href="work-single.html">Project title</a></h4>
-                          <a href="work-single.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i
-                              class="fas fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-
-                    </div>
-                    <div class="swiper-slide">
-
-                      <div class="qrt-work-item qrt-work-open">
-                        <a data-fancybox="works" href="img/projects/original-size/8.jpg"
-                          class="qrt-cursor-scale qrt-work-cover-frame">
-                          <img src="img/projects/thumbnails/8.jpg" alt="work cover">
-                          <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                        </a>
-                        <div class="qrt-work-descr">
-                          <h4 class="qrt-cursor-color qrt-white"><a href="work-single.html">Project title</a></h4>
-                          <a href="work-single.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i
-                              class="fas fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-
-                    </div>
-                    <div class="swiper-slide">
-
-                      <div class="qrt-work-item qrt-work-open">
-                        <a data-fancybox="works" href="img/projects/original-size/7.jpg"
-                          class="qrt-cursor-scale qrt-work-cover-frame">
-                          <img src="img/projects/thumbnails/7.jpg" alt="work cover">
-                          <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
-                        </a>
-                        <div class="qrt-work-descr">
-                          <h4 class="qrt-cursor-color qrt-white"><a href="work-single.html">Project title</a></h4>
-                          <a href="work-single.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i
-                              class="fas fa-arrow-right"></i></a>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6">
-
-                <div class="swiper-latest-works-pagination"></div>
-
-              </div>
-              <div class="col-6">
-
-                <div class="qrt-slider-nav">
-                  <!-- prev -->
-                  <div class="qrt-slider-prev qrt-latest-works-prev"><i class="fas fa-arrow-left"></i></div>
-                  <!-- next -->
-                  <div class="qrt-slider-next qrt-latest-works-next"><i class="fas fa-arrow-right"></i></div>
-                </div>
-
-              </div>
-            </div>
+            <?php include("includes/works-slider.php")?>
 
             <div class="qrt-divider"></div>
 

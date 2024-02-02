@@ -28,6 +28,16 @@
     "prices": "Precios",
     "getInTouch": "Contáctame",
     "contactInfo": "Información de contacto",
-    "location": "Ubicación"
+    "location": "Ubicación",
+    "graphicDesigner": "Diseñador gráfico"
+  },
+  "homepageCaptions": {
+    "first": "Logos con significado",
+    "firstDescription": "Con una aguda atención al detalle y gran pasión por el oficio, desarrollamos logotipos con propósito. Fusionamos la creatividad con una narración reflexiva, creando no solo símbolos, sino embajadores visuales de sus marcas, que captan los ojos de los clientes y resuenan con las audiencias, para ayudarle a lanzar negocios líderes en la industria.",
+    "second": "Marca tan irresistible <br> Serás inevitable",
+    "secondDescription": "Creamos materiales de diseño que encarnan la esencia de tu marca, dando forma a una narrativa visual coherente. Nos especializamos en destilar el espíritu mismo de tu negocio en una experiencia visual convincente e inolvidable. Eleva tu presencia, cautiva a tu audiencia y deja una huella indeleble en tu público.",
+    "third": "Visuales clave impactantes",
+    "thirdDescription": "A medida que el mercado se satura, nuestras poderosas artes clave pueden darle a su empresa la ventaja al anunciar sus productos y servicios. Transformamos su visión en imágenes cautivadoras, mejorando su mensaje y dejando un impacto duradero en sus clientes.",
+    "blockquote": "El diseño no es lo que ves, sino la forma en que observas al mundo."
   }
 }

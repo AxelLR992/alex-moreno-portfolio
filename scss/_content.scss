@@ -109,7 +109,7 @@ content
   & .qrt-counter-box {
     & .qrt-counter {
       display: block;
-      font-size: 22px;
+      font-size: 50px;
       font-weight: 800;
       margin-bottom: 10px;
       color: $black-lvl-1;
@@ -422,7 +422,7 @@ content
 
   & .swiper-slide {
     & img {
-      width: 90px;
+      width: 130px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -476,10 +476,12 @@ content
   margin-bottom: 40px;
 
   & img {
-    width: 50px;
+    width: 120px;
     margin-bottom: 20px;
   }
-
+  .contact-icons {
+    width: 50px;
+  }
   & h4 {
     margin-bottom: 20px;
   }

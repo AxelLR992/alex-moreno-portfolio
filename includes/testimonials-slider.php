@@ -11,9 +11,9 @@ $testimonials = json_decode($fetch->get("/content/items/testimonials", array("lo
 
 <div class="row">
     <div class="col-lg-12">
-        <h3 class="qrt-mb-40">Testimonials</h3>
+        <h3 class="qrt-mb-40 text-center">Testimonials</h3>
     </div>
-    <div class="col-lg-12">
+    <div class="col-lg-12 mt-5">
         <div class="swiper-container qrt-testimonials-slider" style="overflow: visible">
             <div class="swiper-wrapper">
                 <?php
